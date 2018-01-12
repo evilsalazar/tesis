@@ -1,0 +1,109 @@
+\subsubsection{CUE04.4.1 Realizar comentarios}
+\label{cu:CUE04.4.1}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de ingresar un comentario escrito donde puede realizar una observación acerca del desempeño obtenido por el Practicante.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE04.4.1 Realizar comentarios}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador realizar un comentario sobre el desempeño del Practicante.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo el registro de un comentario el Entrenador debe hacer uso de la pantalla \nameref{pant:IUE04.4.1} donde debe capturar la siguiente información:
+		\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Comentario. Se escribe desde el teclado.
+		\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE04.4.1} el mensaje de notificación \nameref{msj:MSG01}, cuando se registre un comentario de manera exitosa.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Se registra o actualiza en la herramienta un comentario en la rutina seleccionada.
+							\end{compactitem}\\
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR25}.
+								\item \nameref{rn:RNR26}.
+								\item \nameref{rn:RNR27}.
+								
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE04.4.1} el mensaje de error \nameref{msj:MSG13} cuando el formato del comentario ingresado por el Entrenador sea incorrecto.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del \nameref{cu:CUE04.4}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE04.4.1 Realizar comentario}
+\label{tab:CUE04.4.1}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita ingresar un comentario seleccionando la opción \textit{Realizar comentario} de la pantalla \nameref{pant:IUE04.4}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se cumpla lo especificado en la regla de negocio \nameref{rn:RNR26}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se cumpla lo especificado en la regla de negocio \nameref{rn:RNR27}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la pantalla \nameref{pant:IUE04.4.1}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Ingresa el comentario.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que el comentario cumpla con el formato especificado en la regla de negocio \nameref{rn:RNR25}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita guardar el comentario seleccionando la opción \textit{Guardar} de la pantalla \nameref{pant:IUE04.4.1}. \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Registra el nuevo comentario de la rutina realizada en la herramienta. 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa a la pantalla \nameref{pant:IUE04.4}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El comentario no cumple con el formato especificado.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE04.4.1}, el mensaje de error \nameref{msj:MSG13}
+	\item Continua en el paso 5 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea cancelar la operación.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación seleccionando la opción \textit{Cancelar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cancela la operación y regresa a la pantalla \nameref{pant:IUE04.4}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+\clearpage

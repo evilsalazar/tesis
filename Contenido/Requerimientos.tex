@@ -1,0 +1,116 @@
+\chapter{Análisis de requerimientos}
+En el presente capítulo se realiza el análisis correspondiente para la obtención de los requerimientos de la herramienta, comenzando por la definición de los actores participantes y el alcance planteado, obteniendo así el listado de los requerimientos y las reglas de negocio.
+%------------------------------------------------------------------------------------
+\section{Definición de actores}
+En la presente sección se realiza la especificación de los actores que tendrán interacción con la Herramienta de Apoyo al Entrenamiento de Karate Do. A continuación se describen los actores de acuerdo a las actividades que desarrollan.
+%------------------------------------------------------------------------------------
+\subsection{Entrenador}
+\label{act:Entrenador} 
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Nombre:}} Entrenador \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción:}} Persona experta en el arte marcial del Karate Do, la cual domina todos los movimientos de técnica y ejercicios de una rutina de entrenamiento, además de llevar un seguimiento del desempeño de cada uno de sus aprendices. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Responsabilidades:}}
+\begin{itemize}
+	\item Registrar a los practicantes en la herramienta.
+	\item Registrar movimientos de técnica. 
+	\item Registrar rutinas de entrenamiento.
+	\item Visualizar la información de registro de los practicantes.
+	\item Visualizar la lista de los ejercicios de calentamiento.
+	\item Visualizar la lista de los movimientos de técnica.
+	\item Visualizar la lista de las rutinas de entrenamiento.
+	\item Visualizar la trayectoria del desempeño de los practicantes.
+	\item Modificar la información de registro de los practicantes.
+	\item Modificar los identificadores de las rutinas de entrenamiento.
+	\item Asignar a los practicantes una rutina.
+	\item Realizar comentarios sobre el desempeño de cada Practicante.
+\end{itemize}
+\vspace{1em}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Perfil:}}
+\begin{itemize}
+	\item Contar con un grado de al menos cinta negra primer Dan.
+	\item Conocimientos en el uso de computadora.
+	\item Conocimientos básicos en el uso del sensor Kinect.
+\end{itemize}
+\vspace{1em}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Cantidad:}} Uno.
+%------------------------------------------------------------------------------------
+\subsection{Practicante}
+\label{act:Practicante}
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Nombre:}} Practicante. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción:}} Aprendiz de Karate Do cuyo principal interés es aprender nuevas técnicas o mejorar sus habilidades en dicho arte marcial, la cual entrena y realiza las rutinas de entrenamiento registradas por un Entrenador experto. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Responsabilidades:}}
+\begin{itemize}
+	\item Visualizar las rutinas de entrenamiento asignadas por el Entrenador.
+	\item Visualizar los comentarios realizados por su Entrenador.
+	\item Visualizar su información de registro.
+	\item Modificar la contraseña de inicio de sesión en la herramienta.
+	\item Replicar los ejercicios de calentamiento de una rutina seleccionada.
+	\item Replicar los movimientos de técnica de una rutina seleccionada.
+	\item Enviar la rutina de entrenamiento replicada.
+\end{itemize}
+\vspace{1em}
+
+\clearpage
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Perfil:}}
+\begin{itemize}
+	\item Gozar de buena salud y no padecer una enfermedad que se vea afectada por el esfuerzo físico.
+	\item No contar con alguna discapacidad física que impida realizar los movimientos propuestos por la herramienta. 
+	\item Conocimientos en el uso de una computadora.
+	\item Conocimientos básicos en el uso del sensor Kinect.
+	%*\item Estatura 
+\end{itemize}
+\vspace{1em}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Cantidad:}} De uno a diez, cada uno con una sesión independiente.
+%------------------------------------------------------------------------------------
+\section{Alcance}
+\label{sec:Alcance}
+\textbf{El alcance de esta herramienta contempla los siguientes puntos:}\\
+\begin{enumerate}
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Un Entrenador.}}\\
+	El presente trabajo terminal está planteado como una herramienta de apoyo al entrenamiento de Karate Do, es decir estamos transportando parte de una clase de entrenamiento, a un entrenamiento a distancia, y una clase normal consiste en un solo Entrenador dando instrucciones a un grupo de practicantes.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{De 1 a 10 practicantes, cada uno con una sesión independiente.}}\\
+	En base a una encuesta realizada (véase anexo \ref{anex:encuesta} \nameref{anex:encuesta}), determinamos que lo ideal para un grupo de entrenamiento de Karate Do (una clase) es tener a 10 practicantes. Se propone de manera no simultánea ya que al ser una herramienta de apoyo, damos la libertad de que cada Practicante realice sus rutinas en el tiempo en que cada uno de ellos tenga la posibilidad, y no forzamos un horario determinado.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Ejercicios de calentamiento y técnica.}}\\
+	Un entrenamiento completo de Karate Do contempla ejercicios de calentamiento, ejercicios de resistencia y técnica (la cual a su vez se divide en movimientos, combate y katas); para el presente trabajo tomamos en cuenta sólo los ejercicios de calentamiento y los movimientos de técnica inicial ya que se trata de un apoyo al entrenamiento, pues los movimientos de técnica  requieren de un aprendizaje y un entrenamiento constante para mejorar esas habilidades, y para realizar los movimientos de técnica es necesario realizar un calentamiento previo, ya que aunque son movimientos, se requiere un esfuerzo físico e incluso de estiramiento de extremidades.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{10 ejercicios de calentamiento disponibles en total.}}\\
+	Se proponen al menos 1 ejercicio de calentamiento por cada parte del cuerpo importante para realizar los movimientos de técnica y el uso o la selección de alguno de ellos dependerá del tipo de rutina que el Entrenador vaya a asignar.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{8 movimientos de técnica disponibles en total (2 ataques, 3 defensas y 3 posiciones).}}\\
+	Se proponen los movimientos de técnica básicos correspondientes a la cinta blanca, el uso de cada uno de ellos dependerá del tipo de rutina que el Entrenador vaya a asignar.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{24 rutinas de entrenamiento registradas.}}\\
+	De acuerdo a la encuesta realizada (véase \ref{anex:encuesta} \nameref{anex:encuesta}), determinamos que el número de clases ideal para el entrenamiento de Karate Do es de 3 por semana, en este trabajo se propone de esa manera 3 rutinas de entrenamiento por semana, y dado que el entrenamiento completo para poder realizar un examen y cambiar a cinta blanca es de 2 meses, se determina que el número total de rutinas que el Entrenador puede registrar como máximo es de 24.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{E-Learning asíncrono.}}\\
+	Como se describe en el marco teórico en la sección \ref{sec:elearning} \nameref{sec:elearning}, el e-Learning asíncrono hace referencia a un aprendizaje en el que el profesor y el alumno no tienen que estar conectados al mismo tiempo, pero en el cual sigue existiendo un seguimiento y apoyo de dicho profesor hacia el alumno.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Dos Interfaces Naturales de Usuario.}}\\
+	Ambas aplicaciones contarán con una Interfaz Natural de UsuarioLa interfaz del Entrenador será una INU en las partes de de captura y validación de movimientos.\\
+	
+
+\end{enumerate}
+\vspace{1em}
+\textbf{La herramienta no contempla los siguientes puntos (posible trabajo a futuro):}\\
+
+\begin{enumerate}
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Más de un Entrenador, es decir, una organización completa.}}\\
+	Como se mencionó previamente, la herramienta está propuesta para apoyar el entrenamiento de una clase de Karate Do, por lo que el manejo de diferentes entrenadores, o una organización completa queda fuera de nuestros objetivos.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Ejercicios de resistencia, entrenamiento de combate y katas.}}\\
+	Los ejercicios de resistencia, son ejercicios que requieren de un esfuerzo físico mayor y que en diversas ocasiones no es necesario replicar algún movimiento de manera exacta, ya que para estos se requieren de otros factores como la condición física del Practicante o su complexión por mencionar algunos ejemplos.\\
+El entrenamiento del combate requiere de otro Practicante para que se lleve a cabo de manera adecuada, además de un área de entrenamiento mayor ya que existen desplazamientos no uniformes cuando se realiza.\\
+El entrenamiento de katas requiere de desplazamientos lineales horizontales y verticales por lo que estas validaciones quedan fuera de los objetivos principales.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{E-Learning síncrono.}}\\
+	El e-Learning síncrono hace referencia al aprendizaje en el cual el profesor y el alumno se encuentran comunicados en tiempo real, como si se tratase de una clase en persona; como se mencionó previamente este trabajo es un apoyo y si eligiéramos este tipo de aprendizaje, tendríamos que restringir la realización de las rutinas a un horario determinado y entraría en conflicto con los objetivos y justificaciones propuestos.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Uso de streaming.}}\\
+	El uso de video en streaming requiere una cantidad significativa de ancho de banda de ambas partes de la herramienta para que la calidad de imagen sea favorable; en el presente trabajo se requiere que la herramienta funcione de manera adecuada sin necesidad de tener una conexión de alta velocidad.\\
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Grabación de video.}}\\
+	La transferencia directa de archivos no está contemplada por el tipo de e-Learning, además de que la transferencia (subida y bajada) de archivos de video es costosa respecto al ancho de banda.\\
+\end{enumerate}
+\clearpage
+%------------------------------------------------------------------------------------
+\input{./Requerimientos/RequerimientosFuncionales}
+\input{./Requerimientos/RequerimientosNoFuncionales}
+\input{./Requerimientos/ReglasNegocio}

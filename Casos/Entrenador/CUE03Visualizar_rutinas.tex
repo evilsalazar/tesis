@@ -1,0 +1,105 @@
+\subsubsection{CUE03 Visualizar rutinas}
+\label{cu:CUE03}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de visualizar la lista de ejercicios de calentamiento disponibles, la lista de movimientos de técnica capturados y la lista de las rutinas de entrenamiento registradas.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE03 Visualizar rutinas}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador visualizar las listas de movimientos y rutinas previamente registrados.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo los elementos, el Entrenador debe hacer uso de la pantalla \nameref{pant:IUE03}. \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Ninguna.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Se requiere que existan elementos en al menos uno de los catálogos: ejercicios de calentamiento, movimientos de técnica y rutinas de entrenamiento.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+							
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item  Se muestra en el menú principal \nameref{menu:ME01}, el mensaje de error \nameref{msj:MSG24}, cuando debido a un error de conexión no se muestren los elementos de forma correcta.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Primario.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE03 Visualizar rutinas}
+\label{tab:CUE03}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita visualizar los ejercicios de calentamiento, movimientos de técnica y rutinas de entrenamiento registrados en la herramienta seleccionando la opción \textit{Rutinas} del menú \nameref{menu:ME01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Busca la información en los catálogos de \textit{ejercicios de calentamiento, movimientos de técnica y rutinas de entrenamiento}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra las listas rutinas, ejercicios de calentamiento y movimientos de técnica en la pantalla \nameref{pant:IUE03}. \textbf{[Trayectoria B]}
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } Debido a un error de conexión, no se muestran los elementos de forma correcta.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en el menú principal \nameref{menu:ME01}, el mensaje de error \nameref{msj:MSG24}, indicando que la operación no puede continuar de forma correcta.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea regresar a la pantalla anterior.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita regresar a la pantalla anterior seleccionando la opción \textit{Regresar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú principal \nameref{menu:ME01}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+\textbf{\large{Extiende:}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUE03.1}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUE03.2}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUE03.3}
+\end{enumerate}
+%\newpage
+\clearpage

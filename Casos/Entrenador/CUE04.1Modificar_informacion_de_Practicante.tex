@@ -1,0 +1,147 @@
+\subsubsection{CUE04.1 Modificar información de Practicante}
+\label{cu:CUE04.1}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de modificar los datos personales de algún Practicante seleccionado.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{4em}{\textbf{CUE04.1 Modificar información de Practicante}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador modificar los datos de un Practicante.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo la modificación de alguno de los datos del Practicante, el Entrenador debe hacer uso de la pantalla \nameref{pant:IUE04.1} y debe capturar la siguiente información:
+		\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Nombre(s)del usuario. Se escriben desde el teclado.
+			\item Apellido(s). Se escriben desde el teclado.
+			\item Edad. Se escribe desde el teclado.
+			\item Domicilio. Se escribe desde el teclado.
+			\item Teléfono. Se escribe desde el teclado.
+			\item Correo electrónico. Se escribe desde el teclado.
+			\item Avatar del Practicante. Se selecciona con el mouse.
+			\item Peso. Se escribe desde el teclado.
+			\item Estatura. Se escribe desde el teclado.
+			\item Grupo sanguíneo. Se selecciona con el mouse.
+			\item Grado de cinta. Se selecciona con el mouse.
+		\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+							\item Se muestra en la pantalla \nameref{pant:IUE04.1} el mensaje de notificación \nameref{msj:MSG01}, cuando se modifiquen los datos del Practicante de manera exitosa.
+						\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se actualizará el catálogo: \textit{Practicantes} con la nueva información.
+							\end{compactitem}\\
+							
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR01}.
+								\item \nameref{rn:RNR03}.
+								\item \nameref{rn:RNR04}.
+								\item \nameref{rn:RNR07}.
+							\end{compactitem}\\							
+\hline
+\end{tabular}
+\end{table} 
+
+\clearpage
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{14 cm} |}
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE04.1} el mensaje de error \nameref{msj:MSG12} cuando el Entrenador no haya ingresado datos a los campos obligatorios.
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG13} cuando el Entrenador haya ingresado datos con un formato incorrecto en algún campo.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del \nameref{cu:CUE04}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE04.1 Modificar información de Practicante}
+\label{tab:CUE04.1}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita modificar información de alguno de los Practicantes enlistados seleccionando el elemento deseado de la pantalla \nameref{pant:IUE04}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú \nameref{menu:ME04}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona la opción \textit{Modificar Información}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la información del Practicante previamente registrada.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Solicita al \textit{Entrenador} ingresar la información requerida para modificar la información del \textit{Practicante} mediante el uso de la pantalla \nameref{pant:IUE04.1}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Ingresa los datos nuevos del \textit{Practicante}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se hayan ingresado los valores en los campos obligatorios, según lo especificado en las reglas de negocio \nameref{rn:RNR01} y  \nameref{rn:RNR03}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que los valores en los campos cumplan con el formato correcto según lo especificado en las reglas de negocio \nameref{rn:RNR04} y \nameref{rn:RNR07} . \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita guardar los nuevos datos del \textit{Practicante} seleccionando la opción \textit{Guardar}. \textbf{[Trayectoria C]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Actualiza los datos del \textit{Practicante}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa a la pantalla \nameref{pant:IUE04}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El \textit{Entrenador} no ingresó los valores correspondientes en los campos marcados como obligatorios.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE04.1}, el mensaje de error \nameref{msj:MSG12}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 5 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} ingresó valores con un formato incorrecto.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG13}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 5 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+\textbf{\large{Trayectoria alternativa C:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea cancelar la operación.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación seleccionando el botón \textit{Cancelar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cancela la operación y regresa a la pantalla \nameref{pant:IUE04}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+
+
+%\newpage
+\clearpage

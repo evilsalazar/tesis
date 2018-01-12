@@ -1,0 +1,140 @@
+\subsubsection{CUP01.1 Recuperar contraseña}
+\label{cu:CUP01.1}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Practicante la posibilidad de recuperar su contraseña para iniciar sesión en la herramienta en caso de así requerirlo. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUP01.1 Recuperar contraseña}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Practicante}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Practicante recuperar su contraseña de la herramienta. \\
+\hline
+\textbf{Entradas:} & Para llevar a cabo la recuperación de contraseña, el Practicante debe hacer uso de la pantalla \nameref{pant:IUP01.1} donde debe capturar la siguiente información:
+		\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Usuario del practicante. Se escribe desde el teclado.
+		\end{compactitem} \\
+\hline
+\textbf{Salidas:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se envía al correo electrónico registrado el mensaje de tipo correo \nameref{msj:MSG08}, enviando la información de usuario y contraseña correspondiente.
+						\item Se muestra en la pantalla \nameref{pant:IUP01.1} el mensaje de notificación \nameref{msj:MSG03}, indicando que la contraseña registrada ha sido enviada al correo ingresado de manera exitosa.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+							\setlength\itemsep{-0.25em}
+								\item Se requiere que el usuario del Practicante se encuentre registrado en los catálogos.
+							\end{compactitem} \\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+							
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR12}
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se muestra en la pantalla \nameref{pant:IUE01} el mensaje de error \nameref{msj:MSG12} cuando el Entrenador no haya ingresado datos a los campos obligatorios.
+								\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG13}, cuando el Practicante haya ingresado alguno de los datos de manera incorrecta.
+							\end{compactitem}\\
+% \hline
+% \textbf{Tipo:} & Secundario, viene del caso de uso \nameref{cu:CUP01}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUP01.1 Recuperar contraseña}
+\label{tab:CUP01.1}
+\end{table} 
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}					
+% \hline
+% \textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							% \begin{compactitem}
+								% %\setlength\itemsep{-0.25em}
+								% \item Se muestra en la pantalla \nameref{pant:IUE01} el mensaje de error \nameref{msj:MSG12} cuando el Entrenador no haya ingresado datos a los campos obligatorios.
+								% \item Se muestra en pantalla el mensaje de error \nameref{msj:MSG13}, cuando el Practicante haya ingresado alguno de los datos de manera incorrecta.
+							% \end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del caso de uso \nameref{cu:CUP01}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUP01.1 Recuperar contraseña}
+\label{tab:CUP01.1}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita recuperar su contraseña de la herramienta seleccionando la opción \textit{¿Olvidaste tu contraseña?} de la pantalla \nameref{pant:IUP01}. 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra al Practicante la pantalla \nameref{pant:IUP01.1}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Ingresa el usuario del cual quiere recuperar la contraseña.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se hayan ingresado valores en el campo de texto. \textbf{[Trayectoria A]} 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que los valores ingresados tengan el formato correcto. \textbf{[Trayectoria B]} 
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona la opción \textit{Enviar contraseña} de la pantalla \nameref{pant:IUP01.1}. \textbf{[Trayectoria C]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que el usuario ingresado se encuentre en el catálogo de \textit{Practicantes}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Se envía por medio del mensaje de tipo correo \nameref{msj:MSG10} el nombre de usuario y la contraseña actual del Practicante, según lo especificado en la \nameref{rn:RNR12}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de notificación \nameref{msj:MSG03}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa a la pantalla \nameref{pant:IUP01}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El \textit{Practicante} no ingresó valores en el campo de texto.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUP01.1} el mensaje de error \nameref{msj:MSG12}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 3 de la trayectoria principal.
+\end{enumerate}
+
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}} \\
+\textbf{Condición: } El \textit{Practicante} ingresó valores incorrectos.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUP01.1} el mensaje de error \nameref{msj:MSG13}. 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 3 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa C:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea cancelar la operación.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación seleccionando la opción \textit{Cancelar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cancela la operación y regresa a la pantalla \nameref{pant:IUP01}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+\clearpage

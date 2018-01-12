@@ -1,0 +1,191 @@
+\subsubsection{CUE03.1 Registrar rutina}
+\label{cu:CUE03.1}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de registrar una rutina de entrenamiento, compuesta por ejercicios de calentamiento y movimientos de técnica. El registro de las rutinas será realizado mediante la selección de los ejercicios y los movimientos registrados previamente, además del número de repeticiones para cada ejercicio y movimiento.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}} \\
+%\textbf{Descripción} \\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE03.1 Registrar rutina}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador registrar una nueva rutina de entrenamiento.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo el registro de una nueva rutina de entrenamiento, el Entrenador debe hacer uso de la pantalla \nameref{pant:IUE03.1} donde debe capturar la siguiente información:
+	\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Nombre de la rutina de entrenamiento. Se escribe desde el teclado.
+			\item Imagen alusiva a la rutina. Se selecciona con el mouse.
+			\item Ejercicios de calentamiento. Se seleccionan con el mouse.
+			\item Movimientos de técnica. Se seleccionan con el mouse.
+			\item Repeticiones de cada ejercicio y movimiento. Se seleccionan con el mouse.
+	\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE03.1} el mensaje de notificación \nameref{msj:MSG01} cuando se registre una rutina de manera exitosa.
+						\item Se muestra en la pantalla \nameref{pant:IUE03} el mensaje de notificación \nameref{msj:MSG02}, cuando no existan elementos registrados en los catálogos correspondientes.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Se requiere que existan elementos en los catálogos: ejercicios de calentamiento y movimientos de técnica.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se registrará en la herramienta una nueva rutina.
+								\item Se actualizará la información del catálogo de rutinas.
+							\end{compactitem}\\
+\hline
+\end{tabular}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RND02}.
+								\item \nameref{rn:RNR01}.
+								\item \nameref{rn:RNR14}.
+								\item \nameref{rn:RNR15}.
+								\item \nameref{rn:RNR16}.
+								\item \nameref{rn:RNR17}.
+							\end{compactitem}\\							
+\hline
+
+\textbf{Errores:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE03.1} el mensaje de error \nameref{msj:MSG12} cuando el Entrenador no haya ingresado datos a los campos obligatorios.
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG13} cuando el Entrenador haya ingresado datos con formato incorrecto en un campo.
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG16} cuando el Entrenador no haya seleccionado al menos 3 ejercicios de calentamiento o cuando haya seleccionado más de 5 ejercicios.
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG16} cuando el Entrenador no haya seleccionado al menos 2 movimientos de técnica o cuando haya seleccionado más de 4 movimientos.
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG20} cuando el Entrenador haya excedido el número de registros de rutinas permitidos.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del \nameref{cu:CUE03}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE03.1 Registrar rutina}
+\label{tab:CUE031}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita registrar una nueva rutina de entrenamiento seleccionando la opción \textit{Agregar rutina} de la pantalla \nameref{pant:IUE03}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Busca la información de los catálogos ejercicios de calentamiento y movimientos de técnica. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Solicita al \textit{Entrenador} ingresar la información requerida para registrar una nueva rutina mediante el uso de la pantalla \nameref{pant:IUE03.1}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Ingresa los identificadores de la rutina a registrar.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona los ejercicios de calentamiento y movimientos de técnica que van a conformar la nueva rutina, según lo especificado en la \nameref{rn:RND02} dando clic sobre el control de cada uno.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona el número de repeticiones por cada ejercicios de calentamiento y movimientos de técnica seleccionados.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se hayan ingresado los valores en los campos obligatorios, según lo especificado en la regla de negocio \nameref{rn:RNR01} y \nameref{rn:RNR14}. \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que los valores ingresados cumplan con el formato correcto, según lo especificado en la regla de negocio \nameref{rn:RNR15}. \textbf{[Trayectoria C]} \textbf{[Trayectoria D]} \textbf{[Trayectoria E]} 
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita guardar la información de la nueva rutina seleccionando la opción \textit{Guardar}. \textbf{[Trayectoria F]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que no se haya alcanzado el número máximo de rutinas permitidas según lo especificado en la regla de negocio \nameref{rn:RNR17}. \textbf{[Trayectoria G]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Registra los datos de la rutina de entrenamiento en el orden correcto según lo especificado en la regla de negocio \nameref{rn:RNR16}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa a la pantalla \nameref{pant:IUE03}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } No se encontraron al menos dos movimientos de técnica capturados.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE03} el mensaje de notificación \nameref{msj:MSG02}, indicando que no hay datos en los catálogos necesarios y la operación no puede continuar.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} no ingresó los valores correspondientes  en los campos marcados como obligatorios.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE03.1}, el mensaje de error \nameref{msj:MSG12}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 4 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa C:}}\\
+\textbf{Condición: } El \textit{Entrenador} ingresó valores con un formato incorrecto.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG13}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 5 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa D:}}\\
+\textbf{Condición: } El \textit{Entrenador} no seleccionó al menos 3 ejercicios de calentamiento y/o seleccionó más de 5 ejercicios.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG16}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 5 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa E:}}\\
+\textbf{Condición: } El \textit{Entrenador} no seleccionó al menos 2 movimientos de técnica y/o seleccionó más de 4 movimientos.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG16}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 5 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa F:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea cancelar la operación.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación seleccionando la opción \textit{Cancelar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cancela la operación y regresa a la pantalla \nameref{pant:IUE03}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa G:}}\\
+\textbf{Condición: } El \textit{Entrenador} intenta registrar más de 24 rutinas.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG20}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa a la pantalla \nameref{pant:IUE03}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%\newpage
+\clearpage

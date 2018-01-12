@@ -1,0 +1,99 @@
+\subsubsection{CUP02 Visualizar datos personales}
+\label{cu:CUP02}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Practicante la posibilidad de visualizar sus datos personales.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUP02 Visualizar datos personales}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Practicante}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Practicante visualizar sus datos personales. \\
+\hline
+\textbf{Entradas:} & Ninguna. \\
+\hline
+\textbf{Salidas:} &	Ninguna. \\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+							\setlength\itemsep{-0.25em}
+								\item Se requiere que el Practicante haya iniciado sesión previamente.
+							\end{compactitem} \\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+							
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguno.
+							\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Primario.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUP02 Visualizar datos personales}
+\label{tab:CUP02}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita visualizar sus datos personales registrados en la herramienta seleccionando la opción \textit{Datos personales} del menú \nameref{menu:MP01}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Busca la información en el catálogo \textit{Practicantes}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra  los datos personales del \textit{Practicante} en la pantalla \nameref{pant:IUP02}. \textbf{[Trayectoria B]}
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}} \\
+\textbf{Condición: } El Practicante desea cerrar sesión.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cerrar sesión seleccionando la opción \textit{Cerrar sesión} del menú principal \nameref{menu:MP01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cierra la sesión del \textit{Practicante}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}} \\
+\textbf{Condición: } El Practicante desea regresar al menú principal.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita regresar seleccionando la opción \textit{Regresar} de la pantalla \nameref{pant:IUP02}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú principal \nameref{menu:MP01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 1 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Extiende:}}\\
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUP02.1}.
+\end{enumerate}
+\clearpage

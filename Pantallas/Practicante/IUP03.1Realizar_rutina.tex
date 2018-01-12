@@ -1,0 +1,49 @@
+\paragraph{IUP03.1 Realizar rutina} \hspace{1cm}\\ 
+\label{pant:IUP03.1} 
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Objetivo}}\\
+Esta pantalla permite al Practicante visualizar los ejercicios y movimientos de la rutina seleccionada mediante un modelo que representa al Entrenador, así como la opción de realizar la captura los movimientos de técnica.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Diseño}}\\
+En la figura \ref{fig:IUP03.1} se muestra la pantalla \nameref{fig:IUP03.1}, por medio de la cual el Practicante puede visualizar uno por uno los ejercicios y movimientos de la rutina registrada en un modelo que representa al Entrenador, así como un esqueleto en el que se observa el seguimiento de su cuerpo, el cual es usado para la captura.\\
+
+En la parte superior derecha se encuentran el indicador de control de progreso, el cual indica el progreso de la realización de la rutina y las repeticiones que se deben realizar por cada movimiento.\\
+
+La captura de movimiento se realiza con una postura de inicio y una postura de finalización. El modelo animado muestra las posturas por cada movimiento.\\
+
+Para cancelar la captura y regresar a la pantalla \nameref{pant:IUP03} es necesario realizar el gesto de Regresar. \\
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.5]{./Figuras/Pantallas/IUP03_1Realizar_rutina}
+	\caption{IUP03.1 Realizar rutina}
+	\label{fig:IUP03.1}
+\end{figure}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Entradas}}\\
+En esta pantalla el Practicante deberá capturar la siguiente información:
+
+\begin{itemize}
+	\item Movimientos de técnica por medio del sensor Kinect.
+\end{itemize}
+\vspace{1em}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Comandos}}
+\begin{itemize}
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Comenzar captura:}} Permite al Practicante iniciar la captura de un movimiento.
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Finalizar captura:}} Permite al Practicante finalizar la captura de un movimiento.
+	\item \textbf{\textcolor[rgb]{0, 0, 0.545098}{Regresar:}} Descarta los cambios y regresa a al menú de la pantalla \nameref{pant:IUP03}.
+\end{itemize}
+
+\vspace{1em}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Mensajes}}\\
+	
+\textbf{\nameref{msj:MSG01}}: Se muestra en la pantalla \nameref{pant:IUP03.1} indicando que la herramienta ha guardado el desempeño obtenido del \textit{Practicante} de manera exitosa.\\
+ 
+\textbf{\nameref{msj:MSG19}}: Se muestra en la pantalla \nameref{pant:IUP03} indicando no se pueden realizar más una rutina diferente por día.\\
+
+\textbf{\nameref{msj:MSG25}}: Se muestra en la pantalla \nameref{pant:IUP03.1} indicando que el desempeño obtenido no se guardo correctamente.\\
+
+
+\clearpage

@@ -1,0 +1,99 @@
+\subsubsection{CUP01 Iniciar sesión}
+\label{cu:CUP01}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso permite al Practicante iniciar sesión en la herramienta. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}} \\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUP01 Iniciar sesión}}\\
+\hline
+\textbf{Actor:} & \nameref{act:Practicante} \\
+\hline
+\textbf{Objetivo:} & Permitir al Practicante ingresar a la herramienta.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo el inicio de sesión, el Practicante debe hacer uso de la pantalla \nameref{pant:IUP01} y debe ingresar los siguientes datos: 
+	\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Nombre de usuario. Se escribe desde el teclado.
+			\item Contraseña. Se escribe desde el teclado.
+	\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Ninguna
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Se requiere que el Practicante se encuentre registrado en el catálogo: \textit{Practicantes}
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR32}.
+							\end{compactitem}\\	
+\hline
+\textbf{Errores:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG10}, cuando el Practicante haya ingresado alguno de los datos de manera incorrecta.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Primario\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUP01 Iniciar sesión}
+\label{tab:CUP01}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}} \\
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Solicita al \textit{Practicante} ingresar los datos de inicio de sesión mediante la pantalla \nameref{pant:IUP01}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Ingresa en los campos su nombre de usuario y su contraseña.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita ingresar a la herramienta seleccionando la opción \textit{Iniciar sesión}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que la información ingresada cumpla con lo especificado en la regla de negocio \nameref{rn:RNR32}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que la información ingresada coincida con la información de sesión de los Practicantes. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú \nameref{menu:MP01}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}} \\
+\textbf{Condición: } El \textit{Practicante} ingresó valores incorrectos.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUP01} el mensaje de error \nameref{msj:MSG10}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Extiende:}}\\
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUP01.1}.
+\end{enumerate}
+\clearpage

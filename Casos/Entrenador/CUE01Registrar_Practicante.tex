@@ -1,0 +1,180 @@
+\subsubsection{CUE01 Registrar Practicante}
+\label{cu:CUE01}
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de generar el registro de un Practicante, facilitando al Entrenador contar con un control de los Practicantes registrados en la herramienta así como de los datos relevantes de cada uno de ellos, de los cuales realiza el seguimiento de su desempeño.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}} \\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE01 Registrar Practicante}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador registrar un nuevo Practicante.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo el registro de un nuevo Practicante, el Entrenador deberá hacer uso de la pantalla \nameref{pant:IUE01} y deberá capturar la siguiente información:
+		\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Nombre(s)del usuario. Se escriben desde el teclado.
+			\item Apellido(s). Se escriben desde el teclado.
+			\item Edad. Se escribe desde el teclado.
+			\item Domicilio. Se escribe desde el teclado.
+			\item Teléfono. Se escribe desde el teclado.
+			\item Correo electrónico. Se escribe desde el teclado.
+			\item Avatar del Practicante. Se selecciona con el mouse.
+			\item Peso. Se escribe desde el teclado.
+			\item Estatura. Se escribe desde el teclado.
+			\item Grupo sanguíneo. Se selecciona con el mouse.
+			\item Grado de cinta. Se selecciona con el mouse.
+			\item Nombre de usuario. Se escribe desde el teclado.
+		\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE01}, el mensaje \nameref{msj:MSG01}, cuando se registre un Practicante de manera exitosa.
+						\item Se envía al correo electrónico registrado el mensaje de tipo correo \nameref{msj:MSG08}, enviando la información de usuario y contraseña correspondiente.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item El Practicante no debe estar registrado previamente en la herramienta.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se registrará en la herramienta un nuevo Practicante.
+								\item Se actualizará el catálogo: \textit{Practicantes}
+							\end{compactitem}\\
+\hline
+\end{tabular}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR01}.
+								\item \nameref{rn:RNR02}.
+								\item \nameref{rn:RNR03}.
+								\item \nameref{rn:RNR04}.
+								\item \nameref{rn:RNR05}.
+								\item \nameref{rn:RNR06}.
+								\item \nameref{rn:RNR07}.
+								\item \nameref{rn:RNR08}.
+								\item \nameref{rn:RNR10}.
+								\item \nameref{rn:RNR11}.
+								\item \nameref{rn:RNR13}.
+							\end{compactitem}\\		
+\hline
+
+\textbf{Errores:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE01} el mensaje de error \nameref{msj:MSG12} cuando el Entrenador no haya ingresado datos a los campos obligatorios.
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG13} cuando el Entrenador haya ingresado datos con un formato incorrecto en algún campo.
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG11} cuando el Entrenador intente registrar a un Practicante que ya se encuentre registrado en la herramienta.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Primario.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE01 Registrar Practicante}
+\label{tab:CUE01}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita registrar un nuevo \textit{Practicante} seleccionando la opción \textit{Registrar practicante} del menú \nameref{menu:ME02}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Solicita al \textit{Entrenador} ingresar la información requerida para registrar un nuevo \textit{Practicante} mediante el uso de la pantalla \nameref{pant:IUE01}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Ingresa los datos del \textit{Practicante} a registrar, según la información especificada en la regla de negocio \nameref{rn:RNR02}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se hayan ingresado los valores en los campos obligatorios según lo especificado en la regla de negocio \nameref{rn:RNR01} y \nameref{rn:RNR03}. \textbf{[Trayectoria A]} 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que los valores en los campos cumplan con el formato correcto según lo especificado en las reglas de negocio \nameref{rn:RNR04}, \nameref{rn:RNR05}, \nameref{rn:RNR07} y \nameref{rn:RNR10}. \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita registrar al \textit{Practicante} seleccionando la opción \textit{Guardar}. \textbf{[Trayectoria C]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que el nombre de usuario del \textit{Practicante} no se encuentre registrado en la herramienta, según lo especificado en la regla de negocio \nameref{rn:RNR06}.  \textbf{[Trayectoria D]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que el \textit{Practicante} no se encuentre registrado en la herramienta, según lo especificado en la regla de negocio \nameref{rn:RNR13}. \textbf{[Trayectoria E]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Genera una contraseña de manera aleatoria según lo especificado en la \nameref{rn:RNR08}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Registra los datos del \textit{Practicante}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Se envía por medio del mensaje de tipo correo \nameref{msj:MSG08} el nombre de usuario y la contraseña del Practicante recién registrado, según lo especificado en la \nameref{rn:RNR11}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa al menú \nameref{menu:ME02}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El \textit{Entrenador} no ingresó los valores correspondientes  en los campos marcados como obligatorios.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE01}, el mensaje de error \nameref{msj:MSG12}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 3 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} ingresó valores con un formato incorrecto.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en 
+	pantalla el mensaje de error \nameref{msj:MSG13}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 3 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+\textbf{\large{Trayectoria alternativa C:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea cancelar la operación.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=25pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación seleccionando la opción \textit{Cancelar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cancela la operación y regresa al menú \nameref{menu:ME02}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa D:}}\\
+\textbf{Condición: } El \textit{Entrenador} ingresa un nombre de usuario que se encuentra previamente registrado.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG11}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 3 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa E:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea registrar a un \textit{Practicante} que se encuentra previamente registrado.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG11}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 3 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+%\newpage
+\clearpage

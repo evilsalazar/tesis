@@ -1,0 +1,252 @@
+\subsubsection{Catálogo de mensajes}
+\label{sec:mensajes}
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG01 Operación realizada exitosamente}} \hspace{1cm} \\
+\label{msj:MSG01}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Notificación.\\
+\textbf{Objetivo:} Notificar al usuario que la acción solicitada fue realizada exitosamente.\\
+\textbf{Redacción:} ENTIDAD ha sido OPERACIÓN exitosamente.\\
+\textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item ENTIDAD: Es una entidad sobre la cual se ha realizado  la acción.
+	\item OPERACIÓN: Es la acción que el actor solicita realizar.
+\end{itemize}
+\textbf{Ejemplo:} \textit{El Practicante} ha sido \textit{registrado} exitosamente.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG02 No existen movimientos para registrar una rutina}} \hspace{1cm} \\
+\label{msj:MSG02}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Notificación.\\
+\textbf{Objetivo:} Notificar al usuario que aún no existe información registrada en la herramienta.\\
+\textbf{Redacción:} No existen registros en los catálogos de ENTIDAD en la herramienta.\\
+\textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item ENTIDAD: Específica la entidad sobre la cual se está realizando la consulta.
+\end{itemize}
+\textbf{Ejemplo:} No existen \textit{movimientos} capturados en la herramienta.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG03 Envío de contraseña realizado exitosamente}} \hspace{1cm} \\
+\label{msj:MSG03}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Notificación.\\
+\textbf{Objetivo:} Notificar al usuario que la contraseña registrada ha sido enviada al correo ingresado.\\
+\textbf{Redacción:} La contraseña ha sido enviada al correo ingresado.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG04 Confirmar la eliminación de un elemento}} \hspace{1cm} \\
+\label{msj:MSG04}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Confirmación.\\
+\textbf{Objetivo:} Informar al usuario que está a punto de eliminar un elemento y que se necesita su aprobación para ello.\\
+\textbf{Redacción:} Se eliminará ENTIDAD seleccionado(a). ¿Está seguro que desea continuar?\\
+\textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item ENTIDAD: Es una entidad sobre la cual se realizará la acción.
+\end{itemize}
+\textbf{Ejemplo:} Se eliminará \textit{la rutina} seleccionada. ¿Está seguro que desea continuar?.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG05 Confirmar la eliminación de un Practicante}} \hspace{1cm} \\
+\label{msj:MSG05}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Confirmación.\\
+\textbf{Objetivo:} Informar al usuario que está a punto de eliminar un Practicante y todos los datos asociados a él y que se necesita su aprobación para ello.\\
+\textbf{Redacción:} Se eliminará el Practicante NOMBRE, todas sus rutinas asignadas y TODA la información asignada a él. ¿Está seguro que desea continuar?\\
+\textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item NOMBRE: Es un nombre del Practicante.
+\end{itemize}
+\textbf{Ejemplo:} Se eliminará el Practicante \textit{Daniel Sánchez}, todas sus rutinas asignadas y TODA la información asignada a él.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG06 Confirmación de envío de desempeño}} \hspace{1cm} \\
+\label{msj:MSG06}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Confirmación.\\
+\textbf{Objetivo:} Informar al usuario que está a punto de enviar el desempeño de la rutina realizada y que necesita su aprobación para ello.\\
+\textbf{Redacción:} ¿Está seguro que desea enviar el desempeño? Una vez que envíe ya no podrá repetir la rutina.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG07 Confirmación de asignación de rutinas}} \hspace{1cm} \\
+\label{msj:MSG07}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Confirmación.\\
+\textbf{Objetivo:} Informar al usuario que está a punto de asignar rutinas y no podrá modificar esta asignación en la semana correspondiente.\\
+\textbf{Redacción:} Sólo se puede asignar rutinas una vez por semana, ¿Está seguro que desea continuar?\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG08 Envío de contraseña}} \hspace{1cm} \\
+\label{msj:MSG08}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Correo.\\
+\textbf{Objetivo:} Informar al usuario cual es su contraseña para iniciar sesión en la herramienta.\\
+\textbf{Asunto:} Envío de contraseña de la herramienta de apoyo al entrenamiento de Karate Do\\
+\textbf{Redacción:} \\
+	Bienvenido(a) a la herramienta de apoyo al entrenamiento de Karate Do.\\
+
+	Estimado(a) NOMBRE.\\
+
+	Se le envían sus datos de inicio de sesión a la herramienta.\\
+
+	Nombre de usuario: USUARIO
+	
+	Contraseña: CONTRASEÑA\\
+	
+	Para mayor seguridad favor de cambiar su contraseña lo antes posible.\\
+\textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item NOMBRE: Es el nombre completo del Practicante.
+	\item USUARIO: Es el nombre de usuario para ingresar a la herramienta.
+	\item CONTRASEÑA: Es la contraseña generada por la herramienta.
+\end{itemize}
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG09 No se puede eliminar el elemento}} \hspace{1cm} \\
+\label{msj:MSG09}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Notificación.\\
+\textbf{Objetivo:} Informar al usuario que el elemento seleccionado no se puede eliminar porque esta asignado o forma parte de otro elemento.\\
+\textbf{Redacción:} No se puede eliminar ENTIDAD porque está asignado(a) a ELEMENTO.\\
+\textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item ENTIDAD: Es una entidad sobre la cual se ha realizado la acción.
+	\item ELEMENTO: Es un elemento conformado a partir de diferentes entidades.
+\end{itemize}
+\textbf{Ejemplo:} No se puede eliminar \textit{la rutina} porque está asignada a \textit{un Practicante}.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG10 Usuario y/o contraseña incorrectos}} \hspace{1cm} \\
+\label{msj:MSG10}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Ubicación:} Campo. Se muestra a la derecha del campo.\\
+\textbf{Objetivo:} Informar al usuario que el nombre de usuario y/o contraseña son incorrectos.\\
+\textbf{Redacción:} El nombre de usuario y/o contraseña son incorrectos. Favor de verificarlo.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG11 Registro repetido}} \hspace{1cm} \\
+\label{msj:MSG11}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que ya existe un registro con los mismos datos.\\
+\textbf{Redacción:} Error, ya existe ENTIDAD con el mismo nombre en la herramienta.\\
+\textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item ENTIDAD: Es una entidad sobre la cual se ha realizado  la acción.
+\end{itemize}
+\textbf{Ejemplo:} Error, ya existe \textit{un Practicante} con el mismo nombre en la herramienta.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG12 Falta un dato obligatorio para efectuar la operación solicitada}} \hspace{1cm} \\
+\label{msj:MSG12}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Ubicación:} Campo. Se muestra a la derecha del campo.\\
+\textbf{Objetivo:} Informar al usuario la omisión de algún dato obligatorio para realizar la operación solicitada.\\
+\textbf{Redacción:} Campo obligatorio.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG13 Formato incorrecto}} \hspace{1cm} \\
+\label{msj:MSG13}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Ubicación:} Campo. Se muestra a la derecha del campo.\\
+\textbf{Objetivo:} Informar al usuario que el dato ingresado en alguno de los campos de registro no cumple con el formato correcto.\\
+\textbf{Redacción:} Formato incorrecto.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG14 Las contraseñas no coinciden}} \hspace{1cm} \\
+\label{msj:MSG14}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario cuando desea modificar su contraseña que tanto la nueva contraseña como su confirmación no coinciden.\\
+\textbf{Redacción:} Las contraseñas ingresadas deben coincidir.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG15 Contraseña vacía}} \hspace{1cm} \\
+\label{msj:MSG15}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario cuando desea modificar su contraseña que tanto la nueva contraseña no puede estar vacía.\\
+\textbf{Redacción:} La contraseña no puede estar vacía.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG16 Número de elementos válidos para el registro de una rutina}} \hspace{1cm} \\
+\label{msj:MSG16}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que debe asignar entre un mínimo y un máximo de ejercicios y movimientos en la rutina a registrar.\\
+\textbf{Redacción:} Debes seleccionar entre MÍNIMO y MÁXIMO ENTIDAD.\\
+\textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item MÍNIMO. Es el número mínimo de repeticiones por cada entidad.
+	\item MÁXIMO. Es el número máximo de repeticiones por cada entidad.
+	\item ENTIDAD. Es un ejercicio de calentamiento o movimiento de técnica.
+\end{itemize}
+\textbf{Ejemplo:} Debes seleccionar entre \textit{3} y \textit{5} ejercicios de calentamiento.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG17 Día de asignación incorrecto}} \hspace{1cm} \\
+\label{msj:MSG17}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que el día de asignación de rutinas debe ser lunes.\\
+\textbf{Redacción:} Sólo puedes asignar rutinas los días lunes.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG18 Número mínimo de rutinas asignadas}} \hspace{1cm} \\
+\label{msj:MSG18}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que debe ingresar un mínimo de rutinas para asignarlas a un Practicante.\\
+\textbf{Redacción:} Debe asignar por lo menos una rutina.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG19 Rutinas diferentes por día}} \hspace{1cm} \\
+\label{msj:MSG19}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que no puede realizar más de una rutina diferente por día.\\
+\textbf{Redacción:} No puedes realizar más de una rutina diferente el mismo día.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG20 Número máximo de rutinas registradas permitidas}} \hspace{1cm} \\
+\label{msj:MSG20}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que ya ha alcanzado el número de registro de rutinas permitidas en la herramienta.\\
+\textbf{Redacción:} Has alcanzado el número máximo de registro de rutinas permitidas.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG21 No se puede enviar el desempeño de un rutina no realizada}} \hspace{1cm} \\
+\label{msj:MSG21}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que no se puede enviar el desempeño de una rutina que no se ha realizado previamente.\\
+\textbf{Redacción:} No puedes enviar el desempeño de una rutina que no has realizado.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG22 Número máximo de practicantes registrados permitidos}} \hspace{1cm} \\
+\label{msj:MSG22}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que ya ha alcanzado el número de registro de practicantes permitidos en la herramienta.\\
+\textbf{Redacción:} Has alcanzado el número máximo de registro de practicantes permitidos.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG23 Asignación de rutinas por día}} \hspace{1cm} \\
+\label{msj:MSG23}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:}  Informar al usuario que no puede asignar más rutinas a ese Practicante hasta la siguiente semana.\\
+\textbf{Redacción:} No puedes asignar más rutinas a un Practicante en un mismo día.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG24 Elementos mostrados incorrectamente}} \hspace{1cm} \\
+\label{msj:MSG24}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que debido a un problema de conexión no se han mostrado los elementos de la interfaz de forma correcta.\\
+\textbf{Redacción:} Error de conexión. No se pudieron cargar los elementos adecuadamente.\\
+
+\paragraph{\textcolor[rgb]{0, 0, 0.545098}{MSG25 Error de conexión}} \hspace{1cm} \\
+\label{msj:MSG25}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Error.\\
+\textbf{Objetivo:} Informar al usuario que no puede realizar la conexión con la herramienta.\\
+\textbf{Redacción:} No se puede realizar la conexión con la herramienta. Favor de verificar tu conexión a internet.\\
+
+% \paragraph{\textcolor[rgb]{0, 0, 0.545098}{}} \hspace{1cm} \\
+% \label{msj:}
+% \rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+% \textbf{Tipo:} .\\
+% \textbf{Objetivo:} \\
+% \textbf{Redacción:} \\
+% \textbf{Parámetros:} El mensaje se muestra con base en los siguientes parámetros:
+% \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	% \item 
+	% \item 
+% \end{itemize}
+% \textbf{Ejemplo:} \textit{} \textit{} .\\
+
+\clearpage

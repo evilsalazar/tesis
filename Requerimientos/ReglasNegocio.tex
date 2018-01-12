@@ -1,0 +1,424 @@
+\section{Reglas de negocio} 
+
+% Definiciones
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RND01 Entrenamiento completo}}}
+\label{rn:RND01}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Definición.\\
+\textbf{Descripción:} Un entrenamiento completo recomendado en la herramienta consiste en 3 rutinas semanales asignadas al Practicante.\\
+\textbf{Referenciado por: } \nameref{cu:CUE04.3} \\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RND02 Conformación de rutina}}}
+\label{rn:RND02}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Definición.\\
+\textbf{Descripción:} Una rutina se compone de:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Ejercicios de calentamiento.
+	\item Movimientos de técnica.
+\end{itemize}
+\textbf{Referenciado por: } \nameref{cu:CUE03.1} \\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RND03 Indicadores de desempeño}}}
+\label{rn:RND03}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Definición.\\
+\textbf{Descripción:} Un indicador de desempeño es una medida en términos de porcentaje, el cual es un promedio en la ejecución de los movimientos de una rutina realizada por el Practicante, con respecto a la información capturada por el Entrenador. El desempeño puede variar entre 0\% y 100\%, donde 0\% representa el desempeño más bajo posible de obtener y el 100\% representa el máximo.\\
+Un indicador de desempeño particular de movimiento es el promedio de las repeticiones capturadas correctamente por cada movimiento.\\
+Un indicador de desempeño general es el promedio de los indicadores de desempeño particulares de todos los movimientos de técnica de una rutina.\\
+\textbf{Referenciado por: } \nameref{cu:CUE04.4}.\\
+
+
+% Restricciones
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR01 Información correcta}}}
+\label{rn:RNR01}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Los datos proporcionados a la herramienta que son marcados como ``requeridos" no se deben
+omitir. Todos los datos proporcionados a la herramienta deben respetar el formato y pertenecer al tipo
+de dato especificado en el \nameref{sec:diccionario}; así como estar dentro de la longitud máxima o
+mínima definida. \\
+\textbf{Referenciado por: } \nameref{cu:CUE01}, \nameref{cu:CUE03.1}, \nameref{cu:CUE03.2}, \nameref{cu:CUE04.1}, \nameref{cu:CUE04.4.1}, \nameref{cu:CUP01}, \nameref{cu:CUP02.1}.\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR02 Información de registro del Practicante}}}
+\label{rn:RNR02}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Los datos del Practicante que el Entrenador registra en la herramienta son:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt \itemsep1pt \parskip0pt \parsep0pt
+	\item Nombre de usuario.
+	\item Nombre(s).
+	\item Apellido(s).
+	\item Edad.
+	\item Domicilio.
+	\item Teléfono.
+	\item Correo electrónico.
+	\item Tipo de avatar
+	\item Peso.
+	\item Estatura.
+	\item Grupo sanguíneo.
+	\item Grado.
+\end{itemize}
+\textbf{Referenciado por: } \nameref{cu:CUE01} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR03 Información obligatoria en registro de Practicantes}}}
+\label{rn:RNR03}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Los datos obligatorios en el registro de Practicantes son los siguientes:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Nombre(s).
+	\item Apellido(s).
+	\item Correo electrónico.
+	\item Nombre de usuario.
+\end{itemize}
+\textbf{Referenciado por: } \nameref{cu:CUE01}, \nameref{cu:CUE04.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR04 Formato correcto de datos personales del Practicante}}}
+\label{rn:RNR04}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Se describe a continuación el formato de información correcta de datos personales del Practicante:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Nombre(s). Una cadena entre 1 y 25 caracteres del alfabeto incluyendo acentos.
+	\item Apellido(s). Una cadena entre 1 y 25 caracteres del alfabeto incluyendo acentos.
+	\item Una cadena de máximo 100 caracteres de tipo alfanuméricos.
+	\item Peso. Una cadena de máximo 7 caracteres de tipo numéricos, expresada en kilogramos. Puede seguir la siguiente estructura ordenada si se desean especificar gramos.
+	\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+		\item Números.
+		\item Carácter ``.".
+		\item Números.
+	\end{itemize}
+	\textbf{Ejemplo:} 58.500
+	\item Estatura. Una cadena de máximo 4 caracteres de tipo numéricos, expresada en metros. Puede seguir la siguiente estructura ordenada si se desean especificar centímetros.
+	\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+		\item Números.
+		\item Carácter ``.".
+		\item Números.
+	\end{itemize}
+	\textbf{Ejemplo:} 1.60
+	\item Edad. Una cadena de máximo 3 caracteres de tipo numéricos.
+	\item Teléfono. Una cadena de máximo 15 caracteres de tipo numéricos. 
+	\item Grupo sanguíneo. Los grupos sanguíneos disponibles para selección en la herramienta son:  Desconocido, AB+, AB-, A+, A-, B+, B-, O+,y O-.
+	\item Grado de cinta. Los grados disponibles para selección en la herramienta son: Ninguna, Blanca, Blanca avanzada, Morada, Amarilla, Naranja, Verde, Azul, Café, Negra 1er Dan, Negra 2do Dan, Negra 3er Dan, Negra 4to Dan, Negra 5to Dan y Negra 6to Dan.
+\end{itemize}
+\textbf{Referenciado por: } \nameref{cu:CUE01}, \nameref{cu:CUE04.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR05 Formato de nombre de usuario}}}
+\label{rn:RNR05}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El nombre de usuario debe ser una cadena de entre 4 y 20 caracteres alfanuméricos. Se deben considerar las siguientes restricciones:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item El nombre de usuario debe ser único.
+	\item No deben existir espacios.
+	\item Se puede hacer uso de guión bajo.
+\end{itemize}
+\textbf{Ejemplo:} Daniel\_San1\\
+\textbf{Referenciado por:} \nameref{cu:CUE01} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR06 Asignación de nombre de usuario del Practicante}}}
+\label{rn:RNR06}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Entrenador sólo puede asignar el nombre de usuario una vez por cada registro de un Practicante.\\
+\textbf{Referenciado por: } \nameref{cu:CUE01} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR07 Formato de correo electrónico}}}
+\label{rn:RNR07}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El correo electrónico debe ser una cadena de máximo 50 caracteres con la siguiente estructura ordenada:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Cadena de caracteres.
+	\item Caracter ``@".
+	\item Cadena de caracteres.
+	\item Caracter ``.".
+	\item Cadena de caracteres.
+\end{itemize}
+\textbf{Ejemplo:} correo@dominio.com\\
+\textbf{Referenciado por:} \nameref{cu:CUE01}, \nameref{cu:CUE04.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR08 Formato de la contraseña generada por la herramienta}}}
+\label{rn:RNR08}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} La longitud de la contraseña debe ser entre 8 y 16 caracteres. Debe contener al menos una letra en mayúscula y al menos un dígito. 
+Se deben considerar las siguientes restricciones: 
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item No debe haber caracteres especiales.
+	\item No debe haber letras acentuadas.
+	\item No deben existir espacios.
+\end{itemize}
+\textbf{Ejemplo:} sdsdEsd4\\
+\textbf{Referenciado por:} \nameref{cu:CUE01} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR09 Formato de la contraseña ingresada por el Practicante}}}
+\label{rn:RNR09}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} La longitud de la contraseña debe ser entre 8 y 16 caracteres. Debe contener al menos una letra en mayúscula y al menos un dígito. 
+Se deberán considerar las siguientes restricciones: 
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item No debe haber caracteres especiales.
+	\item No debe haber letras acentuadas.
+	\item No deben existir espacios.
+\end{itemize}
+\textbf{Ejemplo:} Karatekid01\\
+\textbf{Referenciado por:} \nameref{cu:CUP02.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR10 Formato de fecha de inscripción}}}
+\label{rn:RNR10}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} La fecha de inscripción se determina por medio de la fecha del sistema operativo en el momento en que se realiza un registro. \\
+\textbf{Referenciado por: } \nameref{cu:CUE01} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR11 Envío de contraseña}}}
+\label{rn:RNR11}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} La herramienta envía una contraseña al correo electrónico del Practicante, generada aleatoriamente con respecto al formato especificado en la RNR07 Formato de la contraseña generada por la herramienta. \\
+\textbf{Referenciado por: } \nameref{cu:CUE01} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR12 Recuperación de contraseña}}}
+\label{rn:RNR12}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Cuando el Practicante requiere recuperar su contraseña la herramienta envía la contraseña actual al correo electrónico registrado.\\
+\textbf{Referenciado por: } \nameref{cu:CUP01.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR13 Registro repetido/duplicado}}}
+\label{rn:RNR13}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Un Practicante no puede estar registrado más de una vez dentro de la herramienta, esto se verifica con el/los nombre(s) y apellido(s) de dicho Practicante y el nombre de usuario.\\
+\textbf{Referenciado por: } \nameref{cu:CUE01} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR14 Información obligatoria en el registro de rutinas}}}
+\label{rn:RNR14}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Los datos obligatorios en el registro de rutinas son los siguientes:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Nombre de la rutina.
+	\item Ejercicios de calentamiento.
+	\item Número de repeticiones de ejercicios de calentamiento.
+	\item Movimientos de técnica.
+	\item Número de repeticiones de movimientos de técnica.
+\end{itemize}
+\textbf{Referenciado por: } \nameref{cu:CUE03.1}, \nameref{cu:CUE03.2} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR15 Formato correcto para el registro de rutinas.}}}
+\label{rn:RNR15}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Se describe a continuación el formato correcto de la información para el registro de rutinas:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Nombre de la rutina.  Una cadena de entre 1 y 25 caracteres de tipo alfanuméricos.
+	\item Se seleccionan entre 3 y 5 ejercicios de calentamiento.
+	\item Se seleccionan entre 8 y 20 repeticiones por cada ejercicio de calentamiento.
+	\item Se seleccionan entre 2 y 4  movimientos de técnica.
+	\item Se seleccionan entre 8 y 20 repeticiones por cada movimiento de técnica.
+	\item Imagen descriptiva. Se selecciona una de las imágenes disponibles en la herramienta, o bien, se selecciona la imagen por defecto.
+\end{itemize}
+\textbf{Referenciado por: } \nameref{cu:CUE03.1}, \nameref{cu:CUE03.2} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR16 Orden de registro de rutina}}}
+\label{rn:RNR16}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El orden de registro de una rutina debe ser: primero ejercicios de calentamiento y después movimientos de técnica.\\
+\textbf{Referenciado por: } \nameref{cu:CUE03.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR17 Registro máximo de rutinas}}}
+\label{rn:RNR17}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Entrenador puede registrar hasta 24 rutinas diferentes con la técnica inicial de cinta blanca.\\
+\textbf{Referenciado por: } \nameref{cu:CUE03.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR18 Número de rutinas por semana}}}
+\label{rn:RNR18}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Entrenador puede asignar máximo 3 rutinas por semana a cada Practicante. \\
+\textbf{Referenciado por: } \nameref{cu:CUE04.3} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR19 Día de asignación de rutina}}}
+\label{rn:RNR19}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El día para asignar rutinas a los Practicantes es el día Lunes.\\
+\textbf{Referenciado por: } \nameref{cu:CUE04.3} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR20 Multiplicidad de rutinas asignadas}}}
+\label{rn:RNR20}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Entrenador puede asignar la misma rutina al mismo Practicante varias veces por semana.\\
+\textbf{Referenciado por: } \nameref{cu:CUE04.3} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR21 Orden de realización de rutinas}}}
+\label{rn:RNR21}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Practicante puede realizar las rutinas sin importar el orden en que fueron asignadas por el Entrenador.\\
+\textbf{Referenciado por: } \nameref{cu:CUP03.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR22 Rutinas por día}}}
+\label{rn:RNR22}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Practicante puede realizar más de una rutina diferente por día.\\
+\textbf{Referenciado por: } \nameref{cu:CUP03.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR23 Eliminación de Practicantes}}}
+\label{rn:RNR23}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Al eliminar un Practicante se elimina toda la información asociada a él.\\
+\textbf{Referenciado por: } \nameref{cu:CUE04.2} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR24 Eliminación de rutinas}}}
+\label{rn:RNR24}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Una rutina registrada no puede ser eliminada mientras se encuentre asignada a un Practicante.\\
+\textbf{Referenciado por: } \nameref{cu:CUE03.3} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR25 Formato de comentario}}}
+\label{rn:RNR25}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El comentario debe ser una cadena de máximo 500 caracteres de tipo alfanuméricos.\\
+\textbf{Referenciado por: } \nameref{cu:CUE04.4.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR26 Registrar comentarios}}}
+\label{rn:RNR26}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Entrenador puede registrar un sólo comentario por cada rutina realizada por cada Practicante.\\
+\textbf{Referenciado por: } \nameref{cu:CUE04.4.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR27 Modificación de comentarios}}}
+\label{rn:RNR27}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Entrenador puede modificar comentarios previamente guardados.\\
+\textbf{Referenciado por: } \nameref{cu:CUE04.4.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR28 Envío de indicadores de desempeño}}}
+\label{rn:RNR28}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Practicante puede enviar los indicadores de desempeño de una rutina sólo si la ha realizado y guardado previamente.\\
+\textbf{Referenciado por: } \nameref{cu:CUP03.2} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR29 Repetición de rutina}}}
+\label{rn:RNR29}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El Practicante puede repetir la rutina completa siempre y cuando, no se haya enviado el desempeño de la misma.\\
+\textbf{Referenciado por: } \nameref{cu:CUP03.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR30 Desempeño de rutina realizada}}}
+\label{rn:RNR30}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} La herramienta muestra un indicador de desempeño general al término de cada rutina realizada por el Practicante. La herramienta muestra al Entrenador un indicador desempeño por cada movimiento de técnica realizado en una rutina por el Practicante.\\
+\textbf{Referenciado por: } \nameref{cu:CUP03.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR31 Información obligatoria en la modificación de contraseña}}}
+\label{rn:RNR31}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Los datos obligatorios en la modificación de contraseña son los siguientes:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Nueva contraseña.
+	\item Confirmar contraseña.
+\end{itemize}
+\textbf{Referenciado por: } \nameref{cu:CUP02.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR32 Información obligatoria en el inicio de sesión del Practicante}}}
+\label{rn:RNR32}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Los datos obligatorios para iniciar sesión en la herramienta son los siguientes:
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Nombre de usuario.
+	\item Contraseña.
+\end{itemize}
+\textbf{Referenciado por: } \nameref{cu:CUP01} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR33 Envío de indicadores de desempeño duplicados}}}
+\label{rn:RNR33}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Los indicadores de desempeño pueden ser enviados al Entrenador solo una vez por cada rutina.\\
+\textbf{Referenciado por: } \nameref{cu:CUP03.2} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR34 Captura de movimientos}}}
+\label{rn:RNR34}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El método de captura de movimientos debe funcionar con usuarios de diferente estatura.\\
+\textbf{Referenciado por: } \nameref{cu:CUE02} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR35 Modelo guía para la captura}}}
+\label{rn:RNR35}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Durante la captura se muestra un modelo de esqueleto que muestra los movimientos del Entrenador.\\
+\textbf{Referenciado por: } \nameref{cu:CUE02} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR36 Inicio de la captura}}}
+\label{rn:RNR36}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Existe un movimiento específico por cada movimiento de técnica disponible en el catálogo para iniciar la captura.\\
+\textbf{Referenciado por: } \nameref{cu:CUE02} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR37 Finalización de captura}}}
+\label{rn:RNR37}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Existe un movimiento específico por cada movimiento de técnica disponible en el catálogo para finalizar la captura.\\
+\textbf{Referenciado por: } \nameref{cu:CUE02} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR38 Formato de archivo de la captura}}}
+\label{rn:RNR38}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} El formato de archivo de la captura de un movimiento es XML.\\
+\textbf{Referenciado por: } \nameref{cu:CUE02} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR39 Animaciones en la realización de rutinas}}}
+\label{rn:RNR39}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} Durante la realización de una rutina se muestra un modelo 3D que sirve como guía para el Practicante.\\
+\textbf{Referenciado por: } \nameref{cu:CUP03.1} .\\
+
+\subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{RNR40 Validación de movimientos}}}
+\label{rn:RNR40}
+\rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+\textbf{Tipo:} Restricción.\\
+\textbf{Descripción:} La validación de movimientos se realiza a través del algoritmo DTW (ver sección \ref{sec:DTW} \nameref{sec:DTW}).\\
+\textbf{Referenciado por: } \nameref{cu:CUP03.1} .\\
+
+% \subsection{\normalsize{\textcolor[rgb]{0, 0, 0.545098}{}}}
+% \label{rn:}
+% \rule[3mm]{16.59cm}{0.1mm} \vspace{1mm}
+% \textbf{Tipo:} \\
+% \textbf{Descripción:} 
+% \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	% \item 
+	% \item
+% \end{itemize}
+% \textbf{Ejemplo:} \\
+% \textbf{Referenciado por:} \nameref{} \\
+
+\clearpage

@@ -1,0 +1,91 @@
+\subsubsection{CUE04.2 Dar de baja Practicante}
+\label{cu:CUE04.2}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de eliminar algún Practicante previamente registrado.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE04.2 Dar de baja Practicante}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador eliminar algún Practicante de la herramienta.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo la eliminación de algún Practicante, el Entrenador debe hacer uso del menú \nameref{menu:ME04} en la pantalla \nameref{pant:IUE04}.\\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE04} el mensaje de confirmación \nameref{msj:MSG05}, cuando se elija la opción dar de baja.
+						\item Se muestra en la pantalla \nameref{pant:IUE04} el mensaje de notificación \nameref{msj:MSG01}, cuando se elimine algún Practicante de la herramienta de manera exitosa.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Deben existir elementos en el catálogo de \textit{Practicantes}.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se actualizará el catálogo, eliminando el Practicante seleccionado.
+							\end{compactitem}\\
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR23}
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Ninguno.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del \nameref{cu:CUE04}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE04.2 Dar de baja Practicante}
+\label{tab:CUE04.2}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita eliminar alguno de los Practicantes enlistados seleccionando el elemento deseado de la pantalla \nameref{pant:IUE04}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú \nameref{menu:ME04}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona la opción \textit{Dar de baja}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de confirmación \nameref{msj:MSG05}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona la opción \textit{Aceptar}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Actualiza el catálogo de \textit{Practicantes} eliminando la información seleccionada según lo especificado en la regla de negocio \nameref{rn:RNR23}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa a la pantalla \nameref{pant:IUE04}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea cancelar la operación.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación seleccionando la opción \textit{Cancelar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cancela la operación y regresa a la pantalla \nameref{pant:IUE04}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+\clearpage

@@ -1,0 +1,206 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama a bloques del dise\IeC {\~n}o de la herramienta\relax }}{3}{figure.caption.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Vista frontal del Kinect\relax }}{10}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Hardware interno del Kinect\relax }}{11}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces M\IeC {\'u}sculos de cuello\relax }}{18}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Flexi\IeC {\'o}n lateral del cuello, izquierdo y derecho}}}{18}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Flexi\IeC {\'o}n del cuello al frente y extensi\IeC {\'o}n del cuello atr\IeC {\'a}s}}}{18}{subfigure.3.2}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces M\IeC {\'u}sculos del brazo\relax }}{18}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces M\IeC {\'u}sculos de la cadera\relax }}{19}{figure.caption.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Flexi\IeC {\'o}n y extensi\IeC {\'o}n del tronco(enfrente y atr\IeC {\'a}s)}}}{19}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Flexi\IeC {\'o}n del tronco izquierdo y derecho}}}{19}{subfigure.5.2}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces M\IeC {\'u}sculos de la pierna\relax }}{19}{figure.caption.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Flexi\IeC {\'o}n y extensi\IeC {\'o}n de rodilla}}}{19}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Abrir y cerrar las piernas derecha e izquierda}}}{19}{subfigure.6.2}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Estiramientos de pierna\relax }}{20}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Estiramiento de m\IeC {\'u}sculos posteriores de la pierna}}}{20}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Estiramiento del m\IeC {\'u}sculo de la pierna}}}{20}{subfigure.7.2}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Estiramiento\relax }}{20}{figure.caption.12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Posiciones Musubi - dachi y Hachiji - dachi \relax }}{23}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Musubi - dachi frontal}}}{23}{subfigure.9.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hachiji - dachi frontal}}}{23}{subfigure.9.2}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Posici\IeC {\'o}n Senkuntsu - dachi\relax }}{23}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Posici\IeC {\'o}n Senkuntsu - dachi frontal}}}{23}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Posici\IeC {\'o}n Senkuntsu - dachi lateral}}}{23}{subfigure.10.2}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Defensa Gedan Barai Uke\relax }}{24}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Defensa Gedan Barai Uke frontal}}}{24}{subfigure.11.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Defensa Gedan Barai Uke lateral}}}{24}{subfigure.11.2}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Defensa Shudan Soto Uke\relax }}{24}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Defensa Shudan Soto Uke frontal}}}{24}{subfigure.12.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Defensa Shudan Soto Uke lateral}}}{24}{subfigure.12.2}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Defensa Yodan Age Uke\relax }}{25}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Defensa Yodan Age Uke frontal}}}{25}{subfigure.13.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Defensa Yodan Age Uke lateral}}}{25}{subfigure.13.2}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Ataque con brazo Seiken Tsuki\relax }}{25}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ataque con brazo Seiken Tsuki frontal}}}{25}{subfigure.14.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ataque con brazo Seiken Tsuki lateral}}}{25}{subfigure.14.2}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Ataque con pierna Mae Geri\relax }}{26}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ataque con pierna Mae Geri frontal}}}{26}{subfigure.15.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ataque con pierna Mae Geri lateral}}}{26}{subfigure.15.2}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Comparaci\IeC {\'o}n de dos se\IeC {\~n}ales de tiempo con DTW\relax }}{31}{figure.caption.20}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Proceso de negocio actual - Inscripci\IeC {\'o}n\relax }}{34}{figure.caption.21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Proceso de negocio actual\relax }}{34}{figure.caption.22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Proceso de negocio propuesto\relax }}{35}{figure.caption.23}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Proceso de negocio propuesto - Registro\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Capturar movimientos\relax }}{36}{figure.caption.25}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Registrar rutinas\relax }}{36}{figure.caption.26}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Asignar rutinas\relax }}{36}{figure.caption.27}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Replicar rutinas\relax }}{37}{figure.caption.28}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Registrar comentarios\relax }}{37}{figure.caption.29}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Arquitectura de 2 Niveles\relax }}{64}{figure.caption.30}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitectura en capas\relax }}{65}{figure.caption.31}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Modelo 4+1 de Kruchten\relax }}{66}{figure.caption.32}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Casos de uso Herramienta de apoyo al entrenamiento de Karate-Do\relax }}{68}{figure.caption.33}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Casos de uso - Entrenador\relax }}{69}{figure.caption.34}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Casos de uso - Practicante\relax }}{103}{figure.caption.35}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Entorno de trabajo de la herramienta\relax }}{123}{figure.caption.36}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Mensaje de notificaci\IeC {\'o}n\relax }}{125}{figure.caption.37}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Mensaje de confirmaci\IeC {\'o}n\relax }}{125}{figure.caption.38}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Mensaje de correo electr\IeC {\'o}nico\relax }}{126}{figure.caption.39}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Mensaje de error 01\relax }}{126}{figure.caption.40}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Mensaje de error 02\relax }}{127}{figure.caption.41}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Gesto para desplazar los elementos\relax }}{127}{figure.caption.42}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Vista del movimiento del brazo}}}{127}{subfigure.13.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Vista de la INU utilizando el gesto}}}{127}{subfigure.13.2}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Gesto para seleccionar el elemento\relax }}{128}{figure.caption.43}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Vista del movimiento de la pierna}}}{128}{subfigure.14.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Vista de la INU utilizando el gesto}}}{128}{subfigure.14.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\IeC {\'A}rea de trabajo}}}{129}{subfigure.15.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\IeC {\'A}ngulos de profundidad}}}{129}{subfigure.15.2}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces ME01 Men\IeC {\'u} Entrenador\relax }}{130}{figure.caption.45}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces ME02 Men\IeC {\'u} Practicantes\relax }}{131}{figure.caption.46}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces ME03 Men\IeC {\'u} gestionar rutinas\relax }}{132}{figure.caption.47}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces ME04 Men\IeC {\'u} gestionar Practicantes\relax }}{132}{figure.caption.48}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces MP01 Men\IeC {\'u} Practicante\relax }}{133}{figure.caption.49}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces MP02 Men\IeC {\'u} de rutinas\relax }}{134}{figure.caption.50}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces IUE01 Registrar Practicante\relax }}{136}{figure.caption.51}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces IUE02 Capturar movimientos\relax }}{138}{figure.caption.52}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces IUE03 Visualizar rutinas\relax }}{140}{figure.caption.53}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces IUE03.1 Registrar rutina\relax }}{142}{figure.caption.54}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces IUE03.2 Modificar identificadores\relax }}{144}{figure.caption.55}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces IUE04 Lista de Practicantes\relax }}{146}{figure.caption.56}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces IUE04.1 Modificar informaci\IeC {\'o}n de Practicante\relax }}{148}{figure.caption.57}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces IUE04.3 Asignar rutinas\relax }}{150}{figure.caption.58}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces IUE04.4 Visualizar indicadores de desempe\IeC {\~n}o\relax }}{152}{figure.caption.59}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces IUE04.4.1 Realizar comentarios\relax }}{154}{figure.caption.60}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces IUP01 Iniciar sesi\IeC {\'o}n\relax }}{156}{figure.caption.61}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces IUP01.1 Recuperar contrase\IeC {\~n}a\relax }}{158}{figure.caption.62}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces IUP02 Visualizar datos personales\relax }}{160}{figure.caption.63}
+\contentsline {figure}{\numberline {5.34}{\ignorespaces IUP02.1 Modificar contrase\IeC {\~n}a\relax }}{161}{figure.caption.64}
+\contentsline {figure}{\numberline {5.35}{\ignorespaces IUP03 Visualizar lista de rutinas\relax }}{163}{figure.caption.65}
+\contentsline {figure}{\numberline {5.36}{\ignorespaces IUP03.1 Realizar rutina\relax }}{165}{figure.caption.66}
+\contentsline {figure}{\numberline {5.37}{\ignorespaces IUP04 Visualizar lista de comentarios\relax }}{167}{figure.caption.67}
+\contentsline {figure}{\numberline {5.38}{\ignorespaces Diagrama de secuencia CUE01 Registrar practicante\relax }}{176}{figure.caption.68}
+\contentsline {figure}{\numberline {5.39}{\ignorespaces Diagrama de secuencia CUE02 Capturar movimientos\relax }}{177}{figure.caption.69}
+\contentsline {figure}{\numberline {5.40}{\ignorespaces Diagrama de secuencia CUE03 Visualizar rutinas\relax }}{178}{figure.caption.70}
+\contentsline {figure}{\numberline {5.41}{\ignorespaces Diagrama de secuencia CUE03.1 Registrar rutina\relax }}{179}{figure.caption.71}
+\contentsline {figure}{\numberline {5.42}{\ignorespaces Diagrama de secuencia CUE03.2 Modificar identificadores\relax }}{180}{figure.caption.72}
+\contentsline {figure}{\numberline {5.43}{\ignorespaces Diagrama de secuencia CUE03.3 Dar de baja rutinas\relax }}{181}{figure.caption.73}
+\contentsline {figure}{\numberline {5.44}{\ignorespaces Diagrama de secuencia CUE04 Visualizar Practicantes\relax }}{182}{figure.caption.74}
+\contentsline {figure}{\numberline {5.45}{\ignorespaces Diagrama de secuencia CUE04.1 Modificar informaci\IeC {\'o}n de Practicante\relax }}{183}{figure.caption.75}
+\contentsline {figure}{\numberline {5.46}{\ignorespaces Diagrama de secuencia CUE04.2 Dar de baja Practicante\relax }}{184}{figure.caption.76}
+\contentsline {figure}{\numberline {5.47}{\ignorespaces Diagrama de secuencia CUE04.3 Asignar rutinas\relax }}{185}{figure.caption.77}
+\contentsline {figure}{\numberline {5.48}{\ignorespaces Diagrama de secuencia CUE05.4 Visualizar indicadores de desempe\IeC {\~n}o\relax }}{186}{figure.caption.78}
+\contentsline {figure}{\numberline {5.49}{\ignorespaces Diagrama de secuencia CUE04.4.1 Realizar comentarios\relax }}{187}{figure.caption.79}
+\contentsline {figure}{\numberline {5.50}{\ignorespaces Diagrama de secuencia CUP01 Iniciar sesi\IeC {\'o}n\relax }}{188}{figure.caption.80}
+\contentsline {figure}{\numberline {5.51}{\ignorespaces Diagrama de secuencia CUP01.1 Recuperar contrase\IeC {\~n}a\relax }}{189}{figure.caption.81}
+\contentsline {figure}{\numberline {5.52}{\ignorespaces Diagrama de secuencia CUP02 Visualizar datos personales\relax }}{190}{figure.caption.82}
+\contentsline {figure}{\numberline {5.53}{\ignorespaces Diagrama de secuencia CUP2.1 Modificar contrase\IeC {\~n}a\relax }}{191}{figure.caption.83}
+\contentsline {figure}{\numberline {5.54}{\ignorespaces Diagrama de secuencia CUP03 Visualizar rutinas\relax }}{192}{figure.caption.84}
+\contentsline {figure}{\numberline {5.55}{\ignorespaces Diagrama de secuencia CUP3.1 Realizar rutina\relax }}{193}{figure.caption.85}
+\contentsline {figure}{\numberline {5.56}{\ignorespaces Diagrama de secuencia CUP3.2 Enviar indicadores de desempe\IeC {\~n}o\relax }}{194}{figure.caption.86}
+\contentsline {figure}{\numberline {5.57}{\ignorespaces Diagrama de secuencia CUP04 Visualizar comentarios\relax }}{195}{figure.caption.87}
+\contentsline {figure}{\numberline {5.58}{\ignorespaces Diagrama de clases de la aplicaci\IeC {\'o}n Entrenador\relax }}{196}{figure.caption.88}
+\contentsline {figure}{\numberline {5.59}{\ignorespaces Diagrama de clases del nivel de datos de la aplicaci\IeC {\'o}n Entrenador\relax }}{197}{figure.caption.89}
+\contentsline {figure}{\numberline {5.60}{\ignorespaces Diagrama de clases del nivel de negocio de la aplicaci\IeC {\'o}n Entrenador\relax }}{198}{figure.caption.90}
+\contentsline {figure}{\numberline {5.61}{\ignorespaces Diagrama de clases del nivel de presentaci\IeC {\'o}n de la aplicaci\IeC {\'o}n Entrenador - 1\relax }}{199}{figure.caption.91}
+\contentsline {figure}{\numberline {5.62}{\ignorespaces Diagrama de clases del nivel de negocio de la aplicaci\IeC {\'o}n Entrenador - 2\relax }}{200}{figure.caption.92}
+\contentsline {figure}{\numberline {5.63}{\ignorespaces Diagrama de clases del nivel de entidades de la aplicaci\IeC {\'o}n Entrenador\relax }}{201}{figure.caption.93}
+\contentsline {figure}{\numberline {5.64}{\ignorespaces Diagrama de clases de la aplicaci\IeC {\'o}n Practicante\relax }}{202}{figure.caption.94}
+\contentsline {figure}{\numberline {5.65}{\ignorespaces Diagrama de clases del nivel de datos de la aplicaci\IeC {\'o}n Practicante\relax }}{203}{figure.caption.95}
+\contentsline {figure}{\numberline {5.66}{\ignorespaces Diagrama de clases del nivel de negocio de la aplicaci\IeC {\'o}n Practicante\relax }}{203}{figure.caption.96}
+\contentsline {figure}{\numberline {5.67}{\ignorespaces Diagrama de clases del nivel de presentaci\IeC {\'o}n de la aplicaci\IeC {\'o}n Practicante - 1\relax }}{204}{figure.caption.97}
+\contentsline {figure}{\numberline {5.68}{\ignorespaces Diagrama de clases del nivel de presentaci\IeC {\'o}n de la aplicaci\IeC {\'o}n Practicante - 2\relax }}{205}{figure.caption.98}
+\contentsline {figure}{\numberline {5.69}{\ignorespaces Diagrama de clases del nivel de entidades de la aplicaci\IeC {\'o}n Practicante\relax }}{206}{figure.caption.99}
+\contentsline {figure}{\numberline {5.70}{\ignorespaces Modelo relacional\relax }}{207}{figure.caption.100}
+\contentsline {figure}{\numberline {5.71}{\ignorespaces Diagrama de componentes - Entrenador\relax }}{211}{figure.caption.101}
+\contentsline {figure}{\numberline {5.72}{\ignorespaces Diagrama de componentes - Practicante\relax }}{212}{figure.caption.102}
+\contentsline {figure}{\numberline {5.73}{\ignorespaces Diagrama de nodos\relax }}{213}{figure.caption.103}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Puntos del esqueleto de un humano\relax }}{219}{figure.caption.104}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \IeC {\'A}ngulos en el plano XY\relax }}{220}{figure.caption.105}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \IeC {\'A}ngulos en el plano YZ\relax }}{220}{figure.caption.106}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Vista lateral derecha}}}{220}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Vista lateral izquierda}}}{220}{subfigure.3.2}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Tabla de resultados de la comparaci\IeC {\'o}n de Senkuntsu - dachi Derecha\relax }}{222}{figure.caption.107}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Tabla de los resultados del Umbral de Senkuntsu - dachi Derecha\relax }}{222}{figure.caption.108}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Desviaci\IeC {\'o}n Est\IeC {\'a}ndar de Senkuntsu - dachi Derecha en \IeC {\'a}ngulos en el plano YZ\relax }}{223}{figure.caption.109}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Desviaci\IeC {\'o}n Est\IeC {\'a}ndar de Pierna Derecha}}}{223}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Desviaci\IeC {\'o}n Est\IeC {\'a}ndar de Pierna Izquierda}}}{223}{subfigure.6.2}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Desviaci\IeC {\'o}n Est\IeC {\'a}ndar del \IeC {\'a}ngulo entre las dos piernas en el plano XZ\relax }}{223}{figure.caption.110}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Tabla de resultados de la comparaci\IeC {\'o}n de Senkuntsu - dachi Izquierda\relax }}{224}{figure.caption.111}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Tabla de los resultados del Umbral de Senkuntsu - dachi Izquierda\relax }}{224}{figure.caption.112}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Desviaci\IeC {\'o}n Est\IeC {\'a}ndar de Senkuntsu - dachi Izquierda en \IeC {\'a}ngulos en el plano YZ\relax }}{225}{figure.caption.113}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Desviaci\IeC {\'o}n Est\IeC {\'a}ndar de Pierna Derecha}}}{225}{subfigure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Desviaci\IeC {\'o}n Est\IeC {\'a}ndar de Pierna Izquierda}}}{225}{subfigure.10.2}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Desviaci\IeC {\'o}n Est\IeC {\'a}ndar del \IeC {\'a}ngulo entre las dos piernas en el plano XZ\relax }}{225}{figure.caption.114}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Captura del movimiento Hachiji-dachi sin el uso de los smooth parameters\relax }}{226}{figure.caption.115}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Captura del movimiento Hachiji-dachi con el uso de los smooth parameters\relax }}{227}{figure.caption.116}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Proceso para generar una animaci\IeC {\'o}n\relax }}{232}{figure.caption.117}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Proceso de la captura y validaci\IeC {\'o}n de movimientos\relax }}{233}{figure.caption.118}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Serie de Tiempo Practicante\relax }}{234}{figure.caption.119}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Comparaci\IeC {\'o}n de la series de tiempo de Entrenador y Practicante\relax }}{235}{figure.caption.120}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Prueba de Registro de Practicante\relax }}{236}{figure.caption.121}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Practicante registrado exitosamente\relax }}{237}{figure.caption.122}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mensaje de Registro exitoso}}}{237}{subfigure.19.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Correo electr\IeC {\'o}nico para el Practicante}}}{237}{subfigure.19.2}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Prueba de Registro de Rutinas\relax }}{237}{figure.caption.123}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Practicante registrado exitosamente\relax }}{238}{figure.caption.124}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Prueba de Capturar movimientos Hachiji - dachi\relax }}{239}{figure.caption.125}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Hachiji - dachi\relax }}{240}{figure.caption.126}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Hachiji - dachi\relax }}{240}{figure.caption.127}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Practicante Hachiji - dachi\relax }}{240}{figure.caption.128}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Practicante Hachiji - dachi\relax }}{241}{figure.caption.129}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Senkuntsu - dachi\relax }}{242}{figure.caption.130}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Senkuntsu - dachi\relax }}{242}{figure.caption.131}
+\contentsline {figure}{\numberline {6.29}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Practicante Senkuntsu - dachi\relax }}{242}{figure.caption.132}
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Practicante Senkuntsu - dachi\relax }}{243}{figure.caption.133}
+\contentsline {figure}{\numberline {6.31}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Senkuntsu - dachi Izquierda\relax }}{243}{figure.caption.134}
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Senkuntsu - dachi Izquierda\relax }}{243}{figure.caption.135}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Movimiendo Senkuntsu - dachi realizado por un Entrenador.}}}{244}{subfigure.33.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Movimiendo Senkuntsu - dachi realizado por una persona sin un entrenamiento previo.}}}{244}{subfigure.33.2}
+\contentsline {figure}{\numberline {6.33}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Shudan - soto - uke\relax }}{245}{figure.caption.137}
+\contentsline {figure}{\numberline {6.34}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Shudan - soto - uke\relax }}{245}{figure.caption.138}
+\contentsline {figure}{\numberline {6.35}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Practicante Shudan - soto - uke\relax }}{245}{figure.caption.139}
+\contentsline {figure}{\numberline {6.36}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Practicante Shudan - soto - uke\relax }}{246}{figure.caption.140}
+\contentsline {figure}{\numberline {6.37}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Shudan - soto - uke Izquierda\relax }}{246}{figure.caption.141}
+\contentsline {figure}{\numberline {6.38}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Shudan - soto - uke Izquierda\relax }}{246}{figure.caption.142}
+\contentsline {figure}{\numberline {6.39}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Gedan - barai - uke\relax }}{247}{figure.caption.143}
+\contentsline {figure}{\numberline {6.40}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Gedan - barai - uke\relax }}{247}{figure.caption.144}
+\contentsline {figure}{\numberline {6.41}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Practicante Gedan - barai - uke\relax }}{247}{figure.caption.145}
+\contentsline {figure}{\numberline {6.42}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Practicante Gedan - barai - uke\relax }}{248}{figure.caption.146}
+\contentsline {figure}{\numberline {6.43}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Gedan - barai - uke Izquierda\relax }}{248}{figure.caption.147}
+\contentsline {figure}{\numberline {6.44}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Gedan - barai - uke Izquierda\relax }}{248}{figure.caption.148}
+\contentsline {figure}{\numberline {6.45}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Mae - geri\relax }}{249}{figure.caption.149}
+\contentsline {figure}{\numberline {6.46}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Mae - geri\relax }}{249}{figure.caption.150}
+\contentsline {figure}{\numberline {6.47}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Mae - geri Izquierda\relax }}{250}{figure.caption.151}
+\contentsline {figure}{\numberline {6.48}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Mae - geri Izquierda\relax }}{250}{figure.caption.152}
+\contentsline {figure}{\numberline {6.49}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Seiken - tsuki\relax }}{251}{figure.caption.153}
+\contentsline {figure}{\numberline {6.50}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Seiken - tsuki\relax }}{251}{figure.caption.154}
+\contentsline {figure}{\numberline {6.51}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Seiken - tsuki Izquierda\relax }}{252}{figure.caption.155}
+\contentsline {figure}{\numberline {6.52}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Seiken - tsuki Izquierda\relax }}{252}{figure.caption.156}
+\contentsline {figure}{\numberline {6.53}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Yodan - age - uke\relax }}{253}{figure.caption.157}
+\contentsline {figure}{\numberline {6.54}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Yodan - age - uke\relax }}{253}{figure.caption.158}
+\contentsline {figure}{\numberline {6.55}{\ignorespaces Resultados de la Comparaci\IeC {\'o}n DTW Entrenador Yodan - age - uke Izquierda\relax }}{254}{figure.caption.159}
+\contentsline {figure}{\numberline {6.56}{\ignorespaces Resultados Desviaci\IeC {\'o}n Est\IeC {\'a}ndar DTW Entrenador Yodan - age - uke Izquierda\relax }}{254}{figure.caption.160}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Encuesta realizada a expertos en Karate Do\relax }}{260}{figure.caption.161}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Datos personales de los encuestados\relax }}{261}{figure.caption.162}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Respuestas de los encuestados\relax }}{261}{figure.caption.163}

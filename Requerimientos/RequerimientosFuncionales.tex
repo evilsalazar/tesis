@@ -1,0 +1,168 @@
+\section{Requerimientos funcionales}
+
+Los requerimientos funcionales se han abordado respecto a lo que se espera que la herramienta cubra en funcionalidad para el entrenamiento de la técnica inicial de cinta blanca del Karate Do. A continuación se muestra cada uno de los requerimientos identificados en el módulo Entrenador y en el módulo Practicante, especificando para cada uno de ellos un identificador único con el cual se hará referencia a los mismos en el documento, el nombre del requerimiento y su descripción. \\
+
+%--------------------------------------------------------------------------------------------------------
+\subsection{Requerimientos funcionales aplicación Entrenador}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF01-E \hspace{2cm} Registro de practicantes}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF01-E}
+\textbf{Descripción: } Podrá realizar el registro de cada Practicante ingresando la información correspondiente al formulario de registro (ver \nameref{rn:RNR01} ). \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF02-E \hspace{2cm} Generación de contraseñas}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF02-E}
+\textbf{Descripción: } La contraseña del Practicante será generada automáticamente por la herramienta y será enviada al correo electrónico previamente registrado. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF03-E \hspace{2cm} Consulta de información de los practicantes}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF03-E}
+\textbf{Descripción: } Podrá visualizar la lista de practicantes registrados además de su información personal. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF04-E \hspace{2cm} Modificación de información de los practicantes}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF04-E}
+\textbf{Descripción: } Podrá realizar modificaciones en la información personal de los practicantes. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF05-E \hspace{2cm} Consulta de trayectoria del Practicante}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF05-E}
+\textbf{Descripción: } Podrá visualizar el desempeño del Practicante. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF06-E \hspace{2cm} Baja de Practicante}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF06-E}
+\textbf{Descripción: } Deberá tener la opción para poder dar de baja algún Practicante previamente registrado. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF07-E \hspace{2cm} Captura de movimientos de técnica}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF07-E}
+\textbf{Descripción: } Podrá realizar la captura de movimientos de técnica. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF08-E \hspace{2cm} Registro de rutinas de entrenamiento}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF08-E}
+\textbf{Descripción: } Podrá realizar el registro de rutinas de entrenamiento seleccionando los ejercicios de un catálogo y movimientos previamente capturados. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF09-E \hspace{2cm} Modificación de identificadores de rutinas de entrenamiento}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF09-E}
+\textbf{Descripción: } Podrá realizar modificaciones en los identificadores de las rutinas de entrenamiento. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF10-E \hspace{2cm} Baja de rutinas de entrenamiento}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF10-E}
+\textbf{Descripción: } Deberá tener la opción para poder dar de baja alguna rutina de entrenamiento. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF11-E \hspace{2cm} Consulta del resultado del desempeño de las rutinas.}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF11-E}
+\textbf{Descripción: } Podrá visualizar el resultado del desempeño que la herramienta generará de forma porcentual con respecto a la exactitud de cada movimiento de técnica, en la rutina que el Practicante realizó. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF12-E \hspace{2cm} Registro de comentarios de rutinas}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF12-E}
+\textbf{Descripción: } Podrá realizar comentarios escritos a la rutina realizada por el Practicante. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF13-E \hspace{2cm} Modificación de comentarios}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF13-E}
+\textbf{Descripción: } Tendrá la opción para poder modificar los comentarios. \\
+\textbf{Versión: } 2. \\
+%--------------------------------------------------------------------------------------------------------
+
+\subsection{Requerimientos funcionales aplicación Practicante}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF01-P \hspace{2cm} Inicio de sesión del Practicante}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF01-P}
+\textbf{Descripción: } Podrá entrar a la herramienta, ingresando el nombre de usuario y contraseña previamente asignados. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF02-P \hspace{2cm} Recuperar contraseña}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF02-P}
+\textbf{Descripción: } Podrá solicitar la recuperación de su contraseña. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF03-P \hspace{2cm} Modificar contraseña}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF03-P}
+\textbf{Descripción: } Podrá modificar su contraseña actual. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF04-P \hspace{2cm} Consulta de información del Practicante}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF04-P}
+\textbf{Descripción: } Podrá visualizar la información contenida en su registro. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF05-P \hspace{2cm} Visualizar rutina de entrenamiento}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF05-P}
+\textbf{Descripción: } Podrá visualizar las rutinas asignadas por el Entrenador. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF06-P \hspace{2cm} Seleccionar rutina de entrenamiento}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF06-P}
+\textbf{Descripción: } Podrá seleccionar la rutina de entrenamiento asignada por el Entrenador. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF07-P \hspace{2cm} Realizar movimientos}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF07-P}
+\textbf{Descripción: } La herramienta identificará los movimientos que el Practicante ha replicado. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF08-P \hspace{2cm} Repetir rutina de entrenamiento}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF08-P}
+\textbf{Descripción: } Deberá tener la opción de repetir la rutina de entrenamiento antes de enviarla al Entrenador. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF09-P \hspace{2cm} Guardar rutina de entrenamiento}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF09-P}
+\textbf{Descripción: } Deberá poder guardar la rutina de entrenamiento realizada. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF10-P \hspace{2cm} Enviar desempeño de rutina}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF10-P}
+\textbf{Descripción: } Deberá tener la opción para enviar el desempeño de la rutina de entrenamiento previamente realizada. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF11-P \hspace{2cm} Consulta de comentarios del Entrenador}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF11-P}
+\textbf{Descripción: } Podrá visualizar los comentarios hechos por el Entrenador en cada rutina. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF12-P \hspace{2cm} Consulta de desempeño}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF12-P}
+\textbf{Descripción: } Podrá visualizar el desempeño obtenido en un rutina realizada inmediatamente después de haberla finalizado. \\
+\textbf{Versión: } 2. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{RF13-P \hspace{2cm} Cierre de sesión}}\\
+\rule[3mm]{17cm}{0.1mm}
+\label{rf:RF13-P}
+\textbf{Descripción: } Deberá tener la opción para poder salir de la herramienta.  \\
+\textbf{Versión: } 2. \\
+
+\clearpage
+%--------------------------------------------------------------------------------------------------------

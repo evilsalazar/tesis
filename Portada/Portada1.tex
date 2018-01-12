@@ -1,0 +1,45 @@
+% \setlength{\unitlength}{1 cm}	%Especificar unidad de trabajo
+
+% 	PRIMERA PAGÍNA DE LAS PORTADAS
+%--------------------------------------------------------------------------------------------------------
+\thispagestyle{empty}	% Borra los estilos que se puedan aplicar en el resto del documento
+\newgeometry{left=2cm,bottom=2cm,right=2cm,top=2cm}	%Define nuevamente los margenes para unas paginas especificas
+
+\begin{minipage}{.15\linewidth}	% Es la mini página del banner izquierdo
+\includegraphics[scale=1]{./Figuras/Portada/Bannerizquierdo}
+\end{minipage}
+\hfill
+\begin{minipage}{.85\linewidth}	% Es la mini página del texto de la portada
+\begin{center}
+{\fontfamily{ptm}\selectfont 	%Para cambiar momentaneamente el tipo de letra a Times
+
+\textbf{\LARGE INSTITUTO POLITÉCNICO NACIONAL}
+\textbf{\Large ESCUELA SUPERIOR DE CÓMPUTO}\\[1.4cm]
+\textbf{\LARGE ESCOM}\\[1.4cm]
+\textit{\large Trabajo de titulación}\\[0.5cm]
+\textbf{\Large ``Herramienta de apoyo al entrenamiento de \\Karate Do"}\\[0.5cm]
+\textit{\large Que para cumplir con la opción de titulación curricular \\en la carrera de }\\[0.5cm]
+\textbf{\Large ``Ingeniería en Sistemas Computacionales"}\\[1.4cm]
+\textit{\large Presentan}\\[0.25cm]
+\textbf{\large Eduardo Adolfo Arroyo López}\\[0.25cm]
+\textbf{\large Evila Lucero Salazar Ortiz}\\[0.25cm]
+\textbf{\large Valeria Canchola Sánchez}\\[1.2cm]
+\textit{\large Directores}\\[0.5cm]
+% \textit{\textbf{\large M. en C. José David Ortega Pacheco\hspace{0.5cm}M. en C. Roberto Eswart Zagal Flores}}\\[3cm]
+\textit{\textbf{M. en C. José David Ortega Pacheco\hspace{1cm}M. en C. Roberto Eswart Zagal Flores}}\\[1cm]
+%\textit{\textbf{\large M. en C. José David Ortega Pacheco}}\\[0.25cm]
+%\textit{\textbf{\large M. en C. Roberto Eswart Zagal Flores}}\\[3.5cm]
+}
+\end{center}
+%\begin{flushright}
+%\normalsize Junio 2015
+%\end{flushright}
+\end{minipage}
+
+\newpage
+\newpage{\thispagestyle{empty}\cleardoublepage}
+% \clearpage \newpage
+% \vspace{2cm}
+% \textbf{{\Huge Universidad de Córdoba}\\[0.5cm]
+
+\restoregeometry

@@ -1,0 +1,94 @@
+\subsubsection{CUP03.2 Enviar indicadores de desempeño}
+\label{cu:CUP03.2}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Practicante la posibilidad de enviar al Entrenador los indicadores de desempeño generados por la herramienta de alguna rutina previamente realizada.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}} \\
+%\textbf{Descripción} \\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{5em}{\textbf{CUP03.2 Enviar indicadores de desempeño}}\\
+\hline
+\textbf{Actor:} & \nameref{act:Practicante} \\
+\hline
+\textbf{Objetivo:} & Enviar al Entrenador los indicadores de desempeño generados por la herramienta de alguna rutina previamente realizada.\\
+\hline
+\textbf{Entradas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+	\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Ninguna.
+	\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUP03} el mensaje de notificación \nameref{msj:MSG01} indicando que los indicadores de desempeño han sido enviados de manera exitosa.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Se requiere que el Practicante haya realizado la rutina seleccionada.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se actualizará el catálogo de \textit{desempeño enviado}.
+							\end{compactitem}\\
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR28}.
+								\item \nameref{rn:RNR33}.
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUP03} el mensaje de error \nameref{msj:MSG21} cuando el Practicante no haya realizado la rutina seleccionada.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del caso de uso \nameref{cu:CUP03}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUP03.2 Enviar indicadores de desempeño}
+\label{tab:CUP03.2}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}} \\
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona la rutina cuyos indicadores desea enviar al \textit{Entrenador} en la pantalla \nameref{pant:IUP03}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita enviar los indicadores de desempeño seleccionando la opción \textit{Enviar} mediante el menú \nameref{menu:MP02}. 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que la rutina seleccionada se haya realizado por el \textit{Practicante}, según lo especificado en la regla de negocio \nameref{rn:RNR28}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se cumpla lo especificado en la regla de negocio \nameref{rn:RNR33}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Envía el desempeño de la rutina realizada.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la pantalla \nameref{pant:IUP03}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } No se puede enviar el desempeño de una rutina que no se ha realizado previamente.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de error \nameref{msj:MSG21}, indicando que se debe realizar un rutina antes de enviar su desempeño.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+\clearpage

@@ -1,0 +1,129 @@
+\subsubsection{CUE02 Capturar movimientos}
+\label{cu:CUE02}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de capturar un movimiento de técnica de los disponibles en el catálogo de movimientos, para su posterior uso al crear rutinas.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE02 Capturar movimientos}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador capturar movimientos y guardarlos en la herramienta.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo el registro del movimiento capturado, el Entrenador debe hacer uso de la pantalla \nameref{pant:IUE02} donde el Entrenador debe capturar lo siguiente:
+		\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Movimiento. Se obtiene mediante el sensor Kinect.
+		\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE02} el mensaje de notificación \nameref{msj:MSG01},  cuando se registre el movimiento de manera exitosa.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Se registra en la herramienta un movimiento de técnica.
+								\item Se actualizará la información del catálogo de \textit{movimientos de técnica}.
+							\end{compactitem}\\
+							
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR34}
+								\item \nameref{rn:RNR35}
+								\item \nameref{rn:RNR36}
+								\item \nameref{rn:RNR37}
+								\item \nameref{rn:RNR38}
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE02} el mensaje de error \nameref{msj:MSG25} cuando no se pueda guardar el movimiento en la base de datos.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Primario.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE02 Capturar movimientos}
+\label{tab:CUE02}
+\end{table} 
+\clearpage
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita capturar un movimiento seleccionando la opción \textit{Capturar} del menú principal \nameref{menu:ME01}.	
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú de la pantalla \nameref{pant:IUE02}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona el movimiento a capturar del catálogo disponible mediante el gesto \textit{Seleccionar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la pantalla de captura \nameref{pant:IUE02}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Realiza el saludo de Karate Do.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Se coloca en posición de alerta.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Realiza el movimiento seleccionado según lo especificado en la regla de negocio \nameref{rn:RNR34} con ayuda del modelo que especifica la regla de negocio \nameref{rn:RNR35}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Comienza la captura del movimiento por medio del sensor Kinect según lo especificado en la regla de negocio \nameref{rn:RNR36}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Finaliza la captura del movimiento según lo especificado en la regla de negocio \nameref{rn:RNR37}. \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Captura el movimiento en el archivo según lo especificado en la regla de negocio \nameref{rn:RNR38}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Guarda el movimiento en la base de datos. \textbf{[Trayectoria C]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje \nameref{msj:MSG01}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El \textit{Practicante} desea regresar a la pantalla anterior sin realizar la captura del movimiento.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación y regresar a la pantalla anterior por medio del gesto \textit{Regresar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa al menú de la pantalla \nameref{pant:IUE02}.
+	\item Continua en el paso 3 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea repetir el movimiento capturado.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita volver a capturar el movimiento colocándose en posición de alerta.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 6 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa C:}}\\
+\textbf{Condición: } La conexión ha fallado al guardar el movimiento capturado en la base de datos.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE02} el mensaje de error \nameref{msj:MSG25} cuando no se pueda guardar el movimiento en la base de datos.
+	\item Continua en el paso 3 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%\newpage
+\clearpage

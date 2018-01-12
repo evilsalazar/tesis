@@ -1,0 +1,47 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Productos de investigaci\IeC {\'o}n\relax }}{8}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Trabajos Terminales y Productos comerciales\relax }}{9}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Descripci\IeC {\'o}n de ejercicios de calentamiento\relax }}{22}{table.2.3}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Descripci\IeC {\'o}n de movimientos de t\IeC {\'e}cnica\relax }}{27}{table.2.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Resumen de atributos de CUE01 Registrar Practicante\relax }}{71}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Resumen de atributos de CUE02 Capturar movimientos\relax }}{74}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Resumen de atributos de CUE03 Visualizar rutinas\relax }}{77}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Resumen de atributos de CUE03.1 Registrar rutina\relax }}{80}{table.5.4}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Resumen de atributos de CUE03.2 Modificar identificadores\relax }}{84}{table.5.5}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Resumen de atributos de CUE03.3 Dar de baja rutinas\relax }}{87}{table.5.6}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Resumen de atributos de CUE04 Visualizar Practicantes\relax }}{89}{table.5.7}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Resumen de atributos de CUE04.1 Modificar informaci\IeC {\'o}n de Practicante\relax }}{92}{table.5.8}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Resumen de atributos de CUE04.2 Dar de baja Practicante\relax }}{94}{table.5.9}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Resumen de atributos de CUE04.3 Asignar rutinas\relax }}{97}{table.5.10}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Resumen de atributos de CUE04.4 Visualizar indicadores de desempe\IeC {\~n}o\relax }}{99}{table.5.11}
+\contentsline {table}{\numberline {5.12}{\ignorespaces Resumen de atributos de CUE04.4.1 Realizar comentario\relax }}{101}{table.5.12}
+\contentsline {table}{\numberline {5.13}{\ignorespaces Resumen de atributos de CUP01 Iniciar sesi\IeC {\'o}n\relax }}{104}{table.5.13}
+\contentsline {table}{\numberline {5.14}{\ignorespaces Resumen de atributos de CUP01.1 Recuperar contrase\IeC {\~n}a\relax }}{106}{table.5.14}
+\contentsline {table}{\numberline {5.15}{\ignorespaces Resumen de atributos de CUP01.1 Recuperar contrase\IeC {\~n}a\relax }}{107}{table.5.15}
+\contentsline {table}{\numberline {5.16}{\ignorespaces Resumen de atributos de CUP02 Visualizar datos personales\relax }}{109}{table.5.16}
+\contentsline {table}{\numberline {5.17}{\ignorespaces Resumen de atributos de CUP02.1 Modificar contrase\IeC {\~n}a\relax }}{112}{table.5.17}
+\contentsline {table}{\numberline {5.18}{\ignorespaces Resumen de atributos de CUP03 Visualizar lista de rutinas\relax }}{114}{table.5.18}
+\contentsline {table}{\numberline {5.19}{\ignorespaces Resumen de atributos de CUP03.1 Realizar rutina\relax }}{117}{table.5.19}
+\contentsline {table}{\numberline {5.20}{\ignorespaces Resumen de atributos de CUP03.2 Enviar indicadores de desempe\IeC {\~n}o\relax }}{119}{table.5.20}
+\contentsline {table}{\numberline {5.21}{\ignorespaces Resumen de atributos de CUP04 Visualizar lista de comentarios\relax }}{121}{table.5.21}
+\contentsline {table}{\numberline {5.22}{\ignorespaces Trazabilidad de los men\IeC {\'u}s del Entrenador\relax }}{134}{table.5.22}
+\contentsline {table}{\numberline {5.23}{\ignorespaces Trazabilidad de las pantallas del Entrenador\relax }}{135}{table.5.23}
+\contentsline {table}{\numberline {5.24}{\ignorespaces Trazabilidad de los men\IeC {\'u}s del Practicante\relax }}{135}{table.5.24}
+\contentsline {table}{\numberline {5.25}{\ignorespaces Trazabilidad de las pantallas del Practicante\relax }}{135}{table.5.25}
+\contentsline {table}{\numberline {5.26}{\ignorespaces Tabla Practicante\relax }}{208}{table.5.26}
+\contentsline {table}{\numberline {5.27}{\ignorespaces Tabla Ejercicio\relax }}{208}{table.5.27}
+\contentsline {table}{\numberline {5.28}{\ignorespaces Tabla Movimiento\relax }}{209}{table.5.28}
+\contentsline {table}{\numberline {5.29}{\ignorespaces Tabla Rutina\relax }}{209}{table.5.29}
+\contentsline {table}{\numberline {5.30}{\ignorespaces Tabla Rutina\_tiene\_Ejercicios\relax }}{209}{table.5.30}
+\contentsline {table}{\numberline {5.31}{\ignorespaces Tabla Rutina\_tiene\_Movimientos\relax }}{209}{table.5.31}
+\contentsline {table}{\numberline {5.32}{\ignorespaces Tabla Rutinas\_Asignadas\relax }}{210}{table.5.32}
+\contentsline {table}{\numberline {5.33}{\ignorespaces Tabla Desempeno\_Particular\relax }}{210}{table.5.33}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

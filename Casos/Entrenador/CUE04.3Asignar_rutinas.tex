@@ -1,0 +1,154 @@
+\subsubsection{CUE04.3 Asignar rutinas}
+\label{cu:CUE04.3}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de asignar hasta 3 rutinas de entrenamiento semanalmente por cada Practicante registrado.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE04.3 Asignar rutinas}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador} \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador asignar rutinas de entrenamiento a los Practicantes.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo la asignación de rutinas el Entrenador debe hacer uso de la pantalla \nameref{pant:IUE04.3} y debe introducir la siguiente información:
+	\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Rutinas de entrenamiento. Se selecciona con el mouse.
+	\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se mostrará en la pantalla \nameref{pant:IUE04.3} el mensaje de notificación \nameref{msj:MSG01} cuando las rutinas se hayan asignado de manera exitosa.
+						\item Se mostrará el mensaje de confirmación \nameref{msj:MSG07} cuando el Entrenador asigne las rutinas.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Se requiere que existan elementos en el catálogo de \textit{rutinas}.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se actualizará la información del catálogo de \textit{rutinas asignadas}.
+							\end{compactitem}\\
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RND01}
+								\item \nameref{rn:RNR18}
+								\item \nameref{rn:RNR19}
+								\item \nameref{rn:RNR20}
+							\end{compactitem}\\
+\hline
+\textbf{Errores:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE04.3} el mensaje de error \nameref{msj:MSG17} cuando el Entrenador trate de asignar rutinas un día que no sea lunes.
+					\end{compactitem}\\
+\hline
+\end{tabular}
+\end{table} 
+
+\clearpage
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}						
+\hline
+				& \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						% \item Se muestra en la pantalla \nameref{pant:IUE04.3} el mensaje de error \nameref{msj:MSG17} cuando el Entrenador trate de asignar rutinas un día que no sea lunes.
+						\item  Se muestra en en la pantalla \nameref{pant:IUE04.3} el mensaje de error \nameref{msj:MSG24}, cuando cuando debido a un error de conexión no se muestren los elementos de forma correcta.
+						\item Se muestra en la pantalla \nameref{pant:IUE04.3} el mensaje de error \nameref{msj:MSG18} cuando el Entrenador no seleccione el mínimo de rutinas.
+						\item Se muestra en la pantalla \nameref{pant:IUE04} el mensaje de error \nameref{msj:MSG23} cuando el Entrenador quiera asignar nuevamente rutinas el mismo día.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del \nameref{cu:CUE04}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE04.3 Asignar rutinas}
+\label{tabla:CUE043}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona el \textit{Practicante} al cuál se asignarán las rutinas mediante el uso de la pantalla \nameref{pant:IUE04}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita realizar la asignación de rutinas al \textit{Practicante} seleccionando la opción \textit{Asignar rutina} del menú \nameref{menu:ME04}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que el día de asignación se el correcto, según lo especificado en la regla de negocio \nameref{rn:RNR19}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que el el Entrenador no haya asignado rutinas previamente ese mismo día, según lo especificado en la regla de negocio \nameref{rn:RNR18}. \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Busca la información del catálogo lista de rutinas. \textbf{[Trayectoria C]}
+	% \item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que el estado del \textit{Practicante} no sea \textit{inactivo}, según lo especificado en las reglas de negocio \nameref{rn:RND03} y \nameref{rn:RNR29}. \textbf{[Trayectoria B]}  
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Solicita al \textit{Entrenador} realizar la selección de rutinas a asignar mediante el uso de la pantalla \nameref{pant:IUE04.3}. 
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona las nuevas rutinas a asignar de la lista de rutinas de entrenamiento registradas según lo especificado en la regla de negocio \nameref{rn:RND01} y \nameref{rn:RNR20}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita asignar la(s) nueva(s) rutina(s) al \textit{Practicante} seleccionando la opción \textit{Guardar}. \textbf{[Trayectoria D]} 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de confirmación \nameref{msj:MSG07}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona la opción \textit{Aceptar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Registra las nuevas rutinas asignadas al \textit{Practicante}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la pantalla \nameref{pant:IUE04}. 
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El \textit{Entrenador} trata de asignar una rutina en un día que no es lunes.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE04} el mensaje de error \nameref{msj:MSG17}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El Entrenador ya ha realizado la asignación de rutinas previamente ese mismo día.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE04}, el mensaje de error \nameref{msj:MSG23}, indicando que la operación no puede continuar.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa C:}}\\
+\textbf{Condición: } Debido a un error de conexión, no se muestran los elementos de forma correcta.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE04}, el mensaje de error \nameref{msj:MSG24}, indicando que la operación no puede continuar de forma correcta.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa D:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea regresar a la pantalla anterior.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita regresar a la pantalla anterior presionando el botón \textit{Regresar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la pantalla \nameref{pant:IUE04}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%\newpage
+\clearpage

@@ -1,0 +1,103 @@
+\subsubsection{CUP03 Visualizar lista de rutinas}
+\label{cu:CUP03}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Practicante la posibilidad de visualizar las rutinas que el Entrenador le haya asignado.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUP03 Visualizar lista de rutinas}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Practicante}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Practicante visualizar las rutinas asignadas por el Entrenador, en la semana correspondiente.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo la visualización de indicadores de desempeño, el Practicante debe hacer uso de la pantalla \nameref{pant:IUP03}. \\
+\hline
+\textbf{Salidas:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+					\setlength\itemsep{-0.25em}
+						\item Ninguna.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+							\setlength\itemsep{-0.25em}
+								\item Se requiere que el Practicante tenga al menos una rutina asignada por parte del Entrenador en el catálogo: \textit{rutinas asignadas}.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+							
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se muestra en el menú principal \nameref{menu:MP01}, el mensaje de error \nameref{msj:MSG24}, cuando cuando debido a un error de conexión no se muestren los elementos de forma correcta.
+							\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Primario.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUP03 Visualizar lista de rutinas}
+\label{tab:CUP03}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita visualizar la lista de rutinas disponibles seleccionando la opción \textit{Lista de rutinas} del menú \nameref{menu:MP01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Busca la información de los catálogos de \textit{rutinas de entrenamiento}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra las primeras 3 rutinas asignadas al Practicante en la pantalla \nameref{pant:IUP03}. \textbf{[Trayectoria B]}
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } Debido a un error de conexión, no se muestran los elementos de forma correcta.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en el menú principal \nameref{menu:MP01}, el mensaje de error \nameref{msj:MSG24}, indicando que la operación no puede continuar de forma correcta.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea regresar a la pantalla anterior.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita regresar a la pantalla anterior seleccionando la opción \textit{Regresar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú principal \nameref{menu:MP01}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Extiende:}}\\
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUP03.1}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUP03.2}.
+\end{enumerate}
+\clearpage

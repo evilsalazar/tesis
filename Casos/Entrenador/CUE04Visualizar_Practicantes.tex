@@ -1,0 +1,108 @@
+\subsubsection{CUE04 Visualizar Practicantes}
+\label{cu:CUE04}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda la posibilidad de visualizar la lista de Practicantes registrados en la herramienta.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}} \\
+%\textbf{Descripción} \\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE04 Visualizar Practicantes}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador} \\
+\hline
+\textbf{Objetivo:} & Visualizar la lista de los Practicantes previamente registrados.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo la visualización de la lista de Practicantes, el Entrenador debe hacer uso de la pantalla \nameref{pant:IUE04}.\\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Ninguna.
+					\end{compactitem}\\
+
+\hline
+\textbf{Precondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Se requiere que existan elementos en el catálogo: \textit{Practicantes}.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna
+							\end{compactitem}\\
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\							
+\hline
+\textbf{Errores:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item  Se muestra en el menú principal \nameref{menu:ME02}, el mensaje de error \nameref{msj:MSG24}, cuando cuando debido a un error de conexión no se muestren los elementos de forma correcta.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Primario.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE04 Visualizar Practicantes}
+\label{tab:CUE04}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita visualizar la lista de Practicantes seleccionando la opción \textit{Lista de Practicantes} del menú \nameref{menu:ME02}. 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Busca la información del catálogo lista de Practicantes. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la pantalla \nameref{pant:IUE04}. \textbf{[Trayectoria B]}
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } Debido a un error de conexión, no se muestran los elementos de forma correcta.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en el menú \nameref{menu:ME02}, el mensaje de error \nameref{msj:MSG24}, indicando que la operación no puede continuar de forma correcta.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea regresar a la pantalla anterior.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita regresar a la pantalla anterior presionando el botón \textit{Regresar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú \nameref{menu:ME02}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+\textbf{\large{Extiende:}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUE04.1}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUE04.2}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUE04.3}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} \nameref{cu:CUE04.4}
+\end{enumerate}
+
+%\newpage
+\clearpage

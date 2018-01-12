@@ -1,0 +1,38 @@
+\subsection{Gestión de Practicantes}
+
+\subsubsection{Introducción}
+La gestión de practicantes consiste en altas, bajas y modificaciones. Permitiendo al Entrenador contar con un control de los Practicantes registrados en la herramienta así como de los datos relevantes de cada uno de ellos.
+
+\subsubsection{Descripción}
+
+En el registro de Practicantes, se pueden capturar los datos siguientes:
+
+	\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+			\item Nombre(s)del usuario.
+			\item Apellido(s).
+			\item Edad.
+			\item Domicilio.
+			\item Teléfono.
+			\item Correo electrónico.
+			\item Avatar del Practicante.
+			\item Peso.
+			\item Estatura.
+			\item Grupo sanguíneo.
+			\item Grado de cinta.
+			\item Nombre de usuario.
+	\end{itemize}
+
+Los cuales fueron definidos de acuerdo a los datos que piden los profesores de Karate Do al momento que un nuevo practicante se registra en su clase, los datos fueron obtenidos por la \ref{anex:encuesta} \nameref{anex:encuesta}, que se realizó a 10 profesores de Karate Do y concuerdan que esta información se requiere de manera administrativa para  tener el control de  sus practicantes.\\
+
+Los datos obligatorios en el registro de Practicantes para el control de los usuarios en la herramienta, son los siguientes:
+		\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+			\item Nombre(s)del usuario.
+			\item Apellido(s).
+			\item Correo electrónico.
+			\item Nombre de usuario.
+		\end{itemize}
+
+En la modificación de la información del Practicante se pueden actualizar los mismos campos del registro, tomando en cuenta lo específicado en las reglas de negocio \nameref{rn:RNR02} y \nameref{rn:RNR03}.\\
+El único campo que no se permite modificar es el nombre de usuario, ya que este dato es el identificador de cada Practicante para la manipulación en la base de datos de la herramienta. \\
+
+La gestión incluye la eliminación de un Practicante, cuando un Practicante ya no esté trabajando con el Entrenador, éste tiene la posibilidad  de darlo de baja de la herramienta. Al eliminar un Practicante se elimina toda la información asociada a él. \\

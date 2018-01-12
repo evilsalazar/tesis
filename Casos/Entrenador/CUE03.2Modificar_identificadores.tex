@@ -1,0 +1,126 @@
+\subsubsection{CUE03.2 Modificar identificadores}
+\label{cu:CUE03.2}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Entrenador la posibilidad de modificar algún identificador (nombre o imagen alusiva) de algún de alguna rutina de entrenamiento.\\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUE03.2 Modificar identificadores}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Entrenador}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Entrenador modificar algún identificador.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo modificación de algún identificador, el Entrenador debe hacer uso de las pantalla \nameref{pant:IUE03.2} donde debe capturar la siguiente información:
+		\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Nombre del identificador. Se escribe desde el teclado.
+			\item Imagen alusiva a la rutina. Se selecciona con el mouse.
+		\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUE03.2} el mensaje de notificación \nameref{msj:MSG01}, cuando se modifique el identificador de manera exitosa.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se actualizará la información del catálogo de \textit{rutinas}.
+							\end{compactitem}\\
+							
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR01}.
+								\item \nameref{rn:RNR14}.
+								\item \nameref{rn:RNR15}.
+							\end{compactitem}\\						
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+							\item Se muestra en la pantalla \nameref{pant:IUE03.2} el mensaje de error \nameref{msj:MSG12} cuando el Entrenador no haya ingresado datos a los campos obligatorios.
+							\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG13} cuando el Entrenador haya ingresado datos con un formato incorrecto en algún campo.
+						\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del \nameref{cu:CUE03}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUE03.2 Modificar identificadores}
+\label{tab:CUE03.2}
+\end{table} 
+
+\clearpage
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita modificar algún identificador de las rutinas enlistadas seleccionando el elemento deseado de la pantalla \nameref{pant:IUE03}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú \nameref{menu:ME03}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Selecciona la opción \textit{Modificar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Solicita al \textit{Entrenador} ingresar la información requerida para modificar el/los identificador(es) nuevo(s) mediante el uso de la pantalla \nameref{pant:IUE03.2}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Ingresa el/los identificador(es) nuevo(s).
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se hayan ingresado los valores en los campos obligatorios, según lo especificado en la regla de negocio \nameref{rn:RNR01} y \nameref{rn:RNR14}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que los valores en los campos cumplan con el formato correcto según lo especificado en la regla de negocio \nameref{rn:RNR15}. \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita guardar los nuevos identificadores seleccionando la opción \textit{Guardar}. \textbf{[Trayectoria C]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Registra el/los nuevo(s) identificador(es).
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Regresa a la pantalla \nameref{pant:IUE03}.	
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El \textit{Entrenador} no ingresó los valores correspondientes en los campos marcados como obligatorios.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUE03.2}, el mensaje de error \nameref{msj:MSG12}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 4 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Entrenador} ingresó valores con un formato incorrecto.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG13}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 4 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa C:}}\\
+\textbf{Condición: } El \textit{Entrenador} desea cancelar la operación.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación seleccionando el botón \textit{Cancelar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cancela la operación y regresa a la pantalla \nameref{pant:IUE03}.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+
+- - - - \textit{Fin de trayectoria.} \\
+%\newpage
+\clearpage

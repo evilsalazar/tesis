@@ -1,0 +1,97 @@
+\section{Vista de escenarios}
+La siguiente Figura \ref{fig:CU_General} \nameref{fig:CU_General} muestra  el diagrama de los casos de uso de la herramienta, contemplando a dos actores finales: Entrenador y Practicante.\\
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{./Figuras/Casos/CUGeneral}
+	\end{center}
+	\caption{Casos de uso Herramienta de apoyo al entrenamiento de Karate-Do}
+	\label{fig:CU_General}
+\end{figure}
+
+\clearpage
+%------------------------------------------------------------------------------------
+\subsection{Casos de uso aplicación Entrenador}
+La Figura \ref{fig:CU_Entrenador} \nameref{fig:CU_Entrenador} que se presenta a continuación, muestra el diagrama de los casos de uso correspondientes al actor Entrenador, además seguido de este se muestran las descripciones y trayectorias de cada uno de ellos.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.6]{./Figuras/Casos/Casos_de_uso_entrenador}
+	\end{center}
+	\caption{Casos de uso - Entrenador}
+	\label{fig:CU_Entrenador}
+\end{figure}
+
+\input{./Casos/Entrenador/CUE01Registrar_Practicante}
+\input{./Casos/Entrenador/CUE02Capturar_movimientos}
+\input{./Casos/Entrenador/CUE03Visualizar_rutinas}
+\input{./Casos/Entrenador/CUE03.1Registrar_rutina}
+\input{./Casos/Entrenador/CUE03.2Modificar_identificadores}
+\input{./Casos/Entrenador/CUE03.3Dar_de_baja}
+\input{./Casos/Entrenador/CUE04Visualizar_Practicantes}
+\input{./Casos/Entrenador/CUE04.1Modificar_informacion_de_Practicante}
+\input{./Casos/Entrenador/CUE04.2Dar_de_baja_Practicante}
+\input{./Casos/Entrenador/CUE04.3Asignar_rutinas}
+\input{./Casos/Entrenador/CUE04.4Visualizar_indicadores_de_desempeno}
+\input{./Casos/Entrenador/CUE04.4.1Realizar_comentarios}
+
+%--------------------------------------------------------------------------------------------------------
+\subsection{Casos de uso aplicación Practicante}
+
+La Figura \ref{fig:CU_Practicante} \nameref{fig:CU_Practicante} muestra el diagrama de casos de uso para el modulo del Practicante en el cual, el usuario Practicante podrá iniciar una sesión en la herramienta y recuperar su contraseña en caso de olvido. Podrá gestionar sus datos personales, así como visualizar la lista de rutinas disponibles que el Entrenador le haya asignado y a su vez realizar las rutinas disponibles. Una vez enviadas las rutinas al Entrenador, podrá observar los comentarios realizados por el mismo una vez que se encuentren disponibles.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.7]{./Figuras/Casos/Casos_de_uso_practicante}
+	\end{center}
+	\caption{Casos de uso - Practicante}
+	\label{fig:CU_Practicante}
+\end{figure}
+
+\clearpage	%Para dar el salto de pagina
+
+\input{./Casos/Practicante/CUP01Iniciar_sesion}
+\input{./Casos/Practicante/CUP01.1Recuperar_contrasena}
+\input{./Casos/Practicante/CUP02Visualizar_datos_personales}
+\input{./Casos/Practicante/CUP02.1Modificar_contrasena}
+\input{./Casos/Practicante/CUP03Visualizar_lista_de_rutinas}
+\input{./Casos/Practicante/CUP03.1Realizar_rutina}
+\input{./Casos/Practicante/CUP03.2Enviar_indicadores_desempeno}
+\input{./Casos/Practicante/CUP04Visualizar_lista_de_comentarios}
+
+%--------------------------------------------------------------------------------------------------------
+\subsection{Diseño de pantallas}
+
+
+\input{./Pantallas/InterfazGrafica}
+\input{./Pantallas/InterfazNatural}
+\input{./Pantallas/Menus}
+
+\input{./Pantallas/Trazabilidad}
+
+\subsubsection{Interfaces aplicación Entrenador}
+
+\input{./Pantallas/Entrenador/IUE01Registrar_Practicante}
+\input{./Pantallas/Entrenador/IUE02Capturar_movimientos}
+\input{./Pantallas/Entrenador/IUE03Visualizar_rutinas}
+\input{./Pantallas/Entrenador/IUE03.1Registrar_rutina}
+\input{./Pantallas/Entrenador/IUE03.2Modificar_identificadores}
+\input{./Pantallas/Entrenador/IUE04Visualizar_Practicantes}
+\input{./Pantallas/Entrenador/IUE04.1Modificar_informacion_de_Practicante}
+\input{./Pantallas/Entrenador/IUE04.3Asignar_rutinas}
+\input{./Pantallas/Entrenador/IUE04.4Visualizar_indicadores_de_desempeno}
+\input{./Pantallas/Entrenador/IUE04.4.1Realizar_comentarios}
+
+
+\subsubsection{Interfaces aplicación Practicante}
+
+\input{./Pantallas/Practicante/IUP01Iniciar_sesion}
+\input{./Pantallas/Practicante/IUP01.1Recuperar_contrasena}
+\input{./Pantallas/Practicante/IUP02Visualizar_datos_personales}
+\input{./Pantallas/Practicante/IUP02.1Modificar_contrasena}
+\input{./Pantallas/Practicante/IUP03Visualizar_lista_de_rutinas}
+\input{./Pantallas/Practicante/IUP03.1Realizar_rutina}
+\input{./Pantallas/Practicante/IUP04Visualizar_lista_de_comentarios}
+
+%Catalogo de mensajes
+\input{./Pantallas/Mensajes}

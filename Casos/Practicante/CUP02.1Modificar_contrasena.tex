@@ -1,0 +1,148 @@
+\subsubsection{CUP02.1 Modificar contraseña}
+\label{cu:CUP02.1}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Practicante la posibilidad de registrar una nueva contraseña. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}} \\
+%\textbf{Descripción} \\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392}  {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUP02.1: Modificar contraseña}}\\
+\hline
+\textbf{Actor:} & \nameref{act:Practicante} \\
+\hline
+\textbf{Objetivo:} & Permitir al usuario registrar una nueva contraseña de ingreso a la herramienta.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo la modificación de la contraseña, el Practicante debe hacer uso de la pantalla \nameref{pant:IUP02.1} y debe capturar la siguiente información:
+	\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Nueva contraseña. Se escribe desde el teclado.
+			\item Confirmación de contraseña. Se escribe desde el teclado.
+	\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUP02.1} el mensaje de notificación \nameref{msj:MSG01} indicando que la herramienta ha actualizado la contraseña de manera exitosa.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se actualizará el catálogo: lista de Practicantes con la nueva información.
+							\end{compactitem}\\
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RNR01}.
+								\item \nameref{rn:RNR09}.
+								\item \nameref{rn:RNR31}.
+							\end{compactitem}\\	
+\hline
+\textbf{Errores:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUP02.1} el mensaje de error \nameref{msj:MSG12} cuando el Practicante no haya ingresado campos obligatorios.
+						% \item Se muestra en pantalla el mensaje de error \nameref{msj:MSG13}, cuando el Practicante haya ingresado datos con un formato incorrecto en algún campo.
+					\end{compactitem}\\							
+\hline
+\end{tabular}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{12 cm} |}
+\hline
+\textbf{Errores:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						% \item Se muestra en la pantalla \nameref{pant:IUP02.1} el mensaje de error \nameref{msj:MSG12} cuando el Practicante no haya ingresado campos obligatorios.
+						\item Se muestra en pantalla el mensaje de error \nameref{msj:MSG13}, cuando el Practicante haya ingresado datos con un formato incorrecto en algún campo.
+						\item Se mostrará en pantalla el mensaje de error \nameref{msj:MSG14} cuando el Practicante haya ingresado contraseñas que no coinciden en ambos campos.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del caso de uso \nameref{cu:CUP02}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUP02.1 Modificar contraseña}
+\label{tab:CUP02.1}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+
+\textbf{\large{Trayectoria principal}} \\
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita modificar su contraseña seleccionando la opción \textit{Modificar contraseña} mediante el uso de la pantalla \nameref{pant:IUP02}. 
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Solicita al \textit{Practicante} ingresar los datos requeridos para modificar su contraseña mediante la pantalla \nameref{pant:IUP02.1}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Ingresa los datos requeridos.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita guardar la nueva contraseña seleccionando la opción \textit{Guardar}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se hayan ingresado los valores en los campos requeridos, según lo especificado en la regla de negocio \nameref{rn:RNR31}. \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que la contraseña cumpla con el formato correcto, según lo especificado en la regla de negocio \nameref{rn:RNR01} y \nameref{rn:RNR09}. \textbf{[Trayectoria C]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que la contraseña ingresada en los dos campos coincida. \textbf{[Trayectoria D]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Registra la nueva contraseña.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de notificación \nameref{msj:MSG01}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la pantalla \nameref{pant:IUP02}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}} \\
+\textbf{Condición: } El \textit{Practicante} desea cancelar la operación.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación seleccionando la opción \textit{Cancelar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Cancela la operación y regresa a la pantalla \nameref{pant:IUP02}.
+	\item Fin del caso de uso.
+\end{enumerate}
+	
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}} \\
+\textbf{Condición: } El \textit{Practicante} no ingresó los valores correspondientes en los campos marcados como obligatorios.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUP02.1} el mensaje de error \nameref{msj:MSG12}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 2 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa C:}} \\
+\textbf{Condición: } El \textit{Practicante} ingresó valores con un formato incorrecto.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG13}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 2 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa D:}} \\
+\textbf{Condición: } El \textit{Practicante} ingresó dos contraseñas que no coinciden.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en pantalla el mensaje de error \nameref{msj:MSG14}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continúa en el paso 2 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+\clearpage

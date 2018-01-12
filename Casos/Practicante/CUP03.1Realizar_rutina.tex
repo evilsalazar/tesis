@@ -1,0 +1,142 @@
+\subsubsection{CUP03.1 Realizar rutina}
+\label{cu:CUP03.1}
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Resumen}} \\
+
+Este caso de uso brinda al Practicante la posibilidad de realizar una rutina de las disponibles en la herramienta. Una vez realizada puede visualizar un indicador de su desempeño general. \\
+
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Descripción}}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| l | p{12 cm} |}
+\hline
+\rowcolor[rgb]{0.529412, 0.807843, 0.980392} {\textbf{Caso de uso:}} & \hspace{7em}{\textbf{CUP03.1 Realizar rutina}}\\
+\hline
+\textbf{Actor:} &  \nameref{act:Practicante}. \\
+\hline
+\textbf{Objetivo:} & Permitir al Practicante realizar la rutina seleccionada y guardar su desempeño en la herramienta.\\
+\hline
+\textbf{Entradas:} & Para llevar a cabo el registro de los movimientos de la rutina el Practicante debe hacer uso de la pantalla \nameref{pant:IUP03.1} donde el Practicante debe capturar lo siguiente:
+		\begin{compactitem} 
+			\setlength\itemsep{-0.25em}
+			\item Movimientos de técnica. Se captura la información de los movimientos mediante el sensor Kinect.
+		\end{compactitem} \\
+\hline
+\textbf{Salidas:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUP03.1} el mensaje de notificación \nameref{msj:MSG01}, indicando que la herramienta ha guardado el desempeño obtenido del \textit{Practicante} de manera exitosa.
+					\end{compactitem}\\
+\hline
+\textbf{Precondiciones:} & 	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								\setlength\itemsep{-0.25em}
+								\item Ninguna.
+							\end{compactitem}\\
+\hline
+\textbf{Postcondiciones:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item Se actualiza el catálogo de \textit{rutinas realizadas}, mediante el desempeño obtenido por el Practicante.
+							\end{compactitem}\\
+							
+\hline
+\textbf{Reglas de negocio:} & \vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+							\begin{compactitem}
+								%\setlength\itemsep{-0.25em}
+								\item \nameref{rn:RND03}.
+								\item \nameref{rn:RNR21}.
+								\item \nameref{rn:RNR22}.
+								\item \nameref{rn:RNR29}.
+								\item \nameref{rn:RNR30}.
+								\item \nameref{rn:RNR39}.
+								\item \nameref{rn:RNR40}.
+							\end{compactitem}\\							
+\hline
+\end{tabular}
+\end{table} 
+
+\clearpage
+
+\begin{table}[H]
+\centering
+\begin{tabular}{| c | p{14 cm} |}
+\hline
+\textbf{Errores:} &	\vspace{-2mm}	%Para quitar el espacio en blanco de la fila
+					\begin{compactitem}
+						\setlength\itemsep{-0.25em}
+						\item Se muestra en la pantalla \nameref{pant:IUP03} el mensaje de error \nameref{msj:MSG19}, indicando no se pueden realizar más una rutina diferente por día.
+						\item Se muestra en la pantalla \nameref{pant:IUP03.1}, el mensaje de error \nameref{msj:MSG25}, indicando que el desempeño obtenido no se guardo correctamente.
+					\end{compactitem}\\
+\hline
+\textbf{Tipo:} & Secundario, viene del caso de uso \nameref{cu:CUP03}.\\
+\hline	
+\end{tabular}
+\caption{Resumen de atributos de CUP03.1 Realizar rutina}
+\label{tab:CUP03.1}
+\end{table} 
+
+%--------------------------------------------------------------------------------------------------------
+\textbf{\textcolor[rgb]{0, 0, 0.545098}{Trayectorias del caso de uso}} \\
+%\textbf{Trayectorias del caso de uso} \\
+
+\textbf{\large{Trayectoria principal}}
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita realizar una de las rutinas disponibles, seleccionando la rutina deseada de la pantalla \nameref{pant:IUP03}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú \nameref{menu:MP02}.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png}  Selecciona la opción \textit{Realizar rutina}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que el orden de realización de rutinas sea según lo especificado en la regla de negocio \nameref{rn:RNR21}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica la realización de una rutina según lo especificado en la regla de negocio \nameref{rn:RNR22}. \textbf{[Trayectoria A]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Verifica que se cumpla lo especificado en la regla de negocio \nameref{rn:RNR29}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra la pantalla \nameref{pant:IUP03.1}. \textbf{[Trayectoria B]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en el modelo especificado en la regla de negocio \nameref{rn:RNR39} el movimiento actual.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en el modelo del \textit{Entrenador}, el movimiento actual del usuario y el conteo de sus repeticiones realizadas.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Comienza la captura del movimiento por medio del sensor Kinect imitando el movimiento del modelo animado.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Finaliza la captura del movimiento por medio del sensor Kinect imitando el movimiento del modelo animado..
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Avanza en uno, el indicador de progreso indicando que se ha pasado a otro movimiento.
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Repite los pasos 8-11 de la trayectoria principal por cada movimiento disponible en la rutina.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Realiza la validación de la información capturada según lo especificado en la regla de negocio \nameref{rn:RNR40}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el indicador de desempeño general de la rutina realizada según lo especificado en la regla de negocio \nameref{rn:RND03} y la regla de negocio \nameref{rn:RNR30}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Guarda la rutina realizada automáticamente. \textbf{[Trayectoria C]}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje \nameref{msj:MSG01}.
+\end{enumerate}
+	
+- - - - \textit{Fin del caso de uso.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa A:}}\\
+\textbf{Condición: } El \textit{Practicante} desea realizar diferentes rutinas en un día. 
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el mensaje de error \nameref{msj:MSG19}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Continua en el paso 1 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa B:}}\\
+\textbf{Condición: } El \textit{Practicante} desea regresar a la pantalla anterior.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt, height=10pt]{./Figuras/iconosCU/usuario.png} Solicita cancelar la operación y regresar a la pantalla anterior mediante el gesto \textit{Regresar}.
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra el menú de la pantalla \nameref{pant:IUP03}.
+	\item  Continua en el paso 1 de la trayectoria principal.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+%.....................................................
+\textbf{\large{Trayectoria alternativa C:}}\\
+\textbf{Condición: } Debido a un error de conexión no se guarda el desempeño obtenido.
+
+\begin{enumerate}
+	\item \includegraphics[width=15pt]{./Figuras/iconosCU/herramienta.png} Muestra en la pantalla \nameref{pant:IUP03.1}, el mensaje de error \nameref{msj:MSG25}, indicando que el desempeño obtenido no se guardo correctamente.
+	\item Fin del caso de uso.
+\end{enumerate}
+
+- - - - \textit{Fin de trayectoria.} \\
+
+\clearpage

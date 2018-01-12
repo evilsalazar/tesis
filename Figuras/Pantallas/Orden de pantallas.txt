@@ -1,0 +1,22 @@
+Entrenador
+
+IUE01 Registrar Practicante
+IUE02 Capturar movimientos
+IUE03 Visualizar rutinas
+IUE03.1 Registrar rutina
+IUE03.2 Modificar identificadores
+IUE04 Visualizar Practicantes
+IUE04.1 Modificar información de Practicante
+IUE04.3 Asignar rutinas
+IUE04.4 Visualizar indicadores de desempeño
+IUE04.4.1 Realizar comentarios
+
+Practicante
+
+IUP01 Iniciar sesión
+IUP01.1 Recuperar contraseña
+IUP02 Visualizar datos personales
+IUP02.1 Modificar contraseña
+IUP03 Visualizar lista de rutinas
+IUP03.1 Realizar rutina
+IUP04 Visualizar lista de comentarios

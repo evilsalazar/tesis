@@ -1,0 +1,111 @@
+\chapter{Arquitectura del software}
+La Figura \ref{fig:Arquitectura2Niveles} \nameref{fig:Arquitectura2Niveles} representa la vista general de la arquitectura propuesta, la cual consiste en un arquitectura de 2-Niveles, la cual separa la presentación y la lógica de negocio del almacenamiento de los datos.\\
+
+Esta arquitectura contempla las siguientes características:
+\begin{itemize}
+	\item El servidor almacena los datos.
+	\item Cada cliente ejecuta un aplicación completa, es decir, la aplicación Entrenador es independiente de la aplicación Practicante.
+\end{itemize}
+
+\textbf{{\large{Estilo arquitectónico en capas}}}\\
+
+El estilo en capas se enfoca en el agrupamiento de funcionalidades relacionadas dentro de una aplicación en diferentes capas que se apilan de forma vertical una sobre otra. La funcionalidad dentro de cada capa tiene un rol común o responsabilidad. La comunicación entre capas es explícita y débilmente acoplada \cite{MArchitecture}.\\
+
+El estilo arquitectónico en capas ha sido descrito como una pirámide de elementos reusables en el que cada capa agrega las responsabilidades y abstracciones de la capa directamente debajo de ella.\\
+
+Las capas de una aplicación pueden residir en una misma computadora (el mismo nivel) o puede ser distribuido en diferentes computadoras (n-niveles). En el presente Trabajo Terminal se propone una arquitectura de 2-niveles (cliente-servidor) con el acceso al servidor de múltiples clientes. Los componentes de cada capa se comunican con componentes en otras capas a través de interfaces bien definidas.\\
+
+Los beneficios principales de un estilo arquitectónico en capas son:\\
+
+\begin{itemize}
+	\item \textbf{Abstracción}. Las capas permiten que se hagan cambios en el nivel de abstracción. Puede aumentar o disminuir el nivel de abstracción que se utiliza en cada capa de la pila jerárquica.
+	\item \textbf{Aislamiento}. Nos permite aislar las actualizaciones realizadas en cada capa permitiendo así disminuir el riesgo e impacto en todo el sistema.
+	\item \textbf{Manejabilidad}. La separación de los intereses principales ayuda a identificar dependencias, y organizar el código en secciones mas manejables.
+	\item \textbf{Reusabilidad}. El uso de roles promueve la reusabilidad, es decir, algunos controladores se pueden reutilizar frecuentemente con otras vistas compatibles y de datos y funcionalidad similares.
+	\item \textbf{Capacidad de prueba}. El aumento de la capacidad de prueba surge de tener interfaces de capas bien definidas, así como la capacidad de cambiar entre diferentes implementaciones de las interfaces. Separar los patrones de presentación permiten construir objetos simulados que imitan el comportamiento de los objetos concretos, tales como el modelo, el controlador, o la vista durante la prueba.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{./Figuras/Arquitectura/Arquitectura2Niveles}
+	\end{center}
+	\caption{Arquitectura de 2 Niveles}
+	\label{fig:Arquitectura2Niveles}
+\end{figure}
+
+Se propone separar cada nivel aplicando el estilo por capas en la arquitectura cliente-servidor-cliente pues su objetivo principal es la separación de la lógica de negocio de la lógica de presentación.\\
+
+\begin{itemize}
+	\item \textbf{Capa de presentación.} Presenta el sistema al usuario, le comunica la información y captura la información del usuario en un mínimo de proceso. Esta capa se comunica únicamente con la capa de negocio.
+	\item \textbf{Capa de negocio.} En esta capa se reciben las peticiones del usuario y se envían las respuestas tras el proceso. Se denomina capa de negocio (e incluso de lógica del negocio) porque es aquí donde se establecen todas las reglas de negocio que deben cumplirse. Esta capa se comunica con la capa de presentación, para recibir las solicitudes y presentar los resultados, y con la capa de datos, para solicitar al gestor de base de datos almacenar o recuperar datos de él.
+	\item \textbf{Capa de datos.} Es la capa encargada de acceder a los datos. En esta capa se reciben solicitudes de almacenamiento o recuperación de información desde la capa de negocio.
+	\item \textbf{Capa de datos compartidos.} En esta capa se mapean las entidades de la base de datos.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{./Figuras/Arquitectura/Arquitectura_enCapas}
+	\end{center}
+	\caption{Arquitectura en capas}
+	\label{fig:Arquitectura_enCapas}
+\end{figure}
+
+Una arquitectura tiene muchas vistas posibles. Documentar todas las vistas potencialmente útiles representa en elevando consumo en tiempo y costo.\\
+
+El modelo de 4+1 \cite{Kruchten} vistas fue desarrollado por Philippe Kruchten, el cual encaja con el estándar \textit{IEEE 1471-2000 Recommended Practice for Architecture Description of Software-Intensive Systems} \cite{IEEE1471} que se utiliza para describir la arquitectura de un sistema de software intensivo basado en el uso de múltiples puntos de vista. El modelo 4+1 describe la arquitectura del software usando cinco vistas concurrentes. Tal como se muestra en la Figura \ref{fig:Modelo} \nameref{fig:Modelo}, donde cada vista se refiere a un conjunto de intereses de diferentes stakeholders de sistema.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{./Figuras/Arquitectura/4+1Kruchten}
+	\end{center}
+	\caption{Modelo 4+1 de Kruchten}
+	\label{fig:Modelo}
+\end{figure}
+
+\begin{itemize}
+	\item La vista lógica describe el modelo de objetos del diseño cuando se usa un método de diseño orientado a objetos. 
+	\item La vista de desarrollo describe la organización estática del software en su ambiente de desarrollo.
+	\item La vista de procesos describe los aspectos de concurrencia y sincronización del diseño.
+	\item La vista física describe el mapeo del software en el hardware y refleja los aspectos de distribución.
+\end{itemize}
+
+La descripción de las decisiones arquitecturales se pueden organizar en estas cuatro vistas y luego ilustrarlas con un conjunto reducido de casos de uso o escenarios, los cuales constituyen la quinta vista. La arquitectura evoluciona parcialmente a partir de esta vista de escenarios.\\
+
+En el presente trabajo se expone una vista adicional al modelo 4+1, la vista de datos, en la cual se describe el esquema de la base de datos.\\
+
+Cada vista se describe en un ``diagrama" que usa su notación particular.\\
+
+\textbf{{\large{Vista lógica}}}\\
+
+La vista lógica se apoya principalmente de los requisitos funcionales, es decir, lo que el sistema debe brindar en términos de servicios a sus usuarios. El sistema se descompone en un conjunto de abstracciones, tomadas en su mayoría del problema principal en forma de objetos o clases. Esta descomposición no solo sirve para el análisis funcional, también sirve para identificar mecanismos comunes y elementos de diseño a lo largo de varias partes del sistema.\\
+
+\textbf{{\large{Vista de procesos}}}\\
+
+La vista de procesos toma en cuenta algunos requisitos no funcionales tales como rendimiento y disponibilidad. Se enfoca en asuntos de concurrencia y distribución, integridad del sistema y de tolerancia a fallos. La vista de procesos también especifica en cuál hilo de control se ejecuta efectivamente una operación de una clase identificada en la vista lógica.\\
+
+La arquitectura de procesos se describe en varios niveles de abstracción, donde cada nivel se refiere a distintos intereses. El nivel más alto de la arquitectura de procesos puede verse como un conjunto de redes lógicas de programas comunicantes (llamados "procesos") ejecutándose en forma independiente y/o distribuidos a lo largo de un conjunto de recursos de hardware.\\
+
+Debido a que el presente Trabajo Terminal no contempla tácticas arquitecturales para atributos de calidad (disponibilidad, escalabilidad, etc) y a que la comunicación entre procesos se establecerá en el Trabajo Terminal 2, se omite la vista de procesos.\\
+
+\textbf{{\large{Vista de desarrollo}}}\\
+
+La vista de desarrollo se centra en la organización real de los módulos de software en el ambiente de desarrollo del software. El software se empaqueta en partes pequeñas – bibliotecas de programas o subsistemas – que pueden ser desarrollados por uno o un grupo pequeño de desarrolladores. Los subsistemas se organizan en una jerarquía de capas, cada una de las cuales brinda una interfaz estrecha y bien definida hacia las capas superiores.\\
+
+\textbf{{\large{Vista física}}}\\
+
+La vista física se enfoca en el mapeo de diferentes elementos identificados en las vistas lógica, de procesos y de desarrollo, en varios nodos.
+El mapeo del software en nodos por lo tanto debe ser muy flexible y tener un impacto mínimo en el código.\\
+
+\textbf{{\large{Vista de escenarios}}}\\
+
+La vista de escenarios se encarga de mostrar las descripciones de las actividades que se deberán realizar para llevar a cabo procesos o tareas específicas del sistema, describiendo paso a paso la secuencia de interacciones entre los actores que participan en cada tarea.
+Para cada escenario, se describen las correspondientes secuencias de interacciones entre objetos y procesos.
+
+\clearpage
+
+
+\input{./Arquitectura/VistaEscenarios}
+\input{./Arquitectura/VistaLogica}
+\input{./Arquitectura/VistaDatos}
+\input{./Arquitectura/VistaDesarrollo}
+\input{./Arquitectura/VistaFisica}

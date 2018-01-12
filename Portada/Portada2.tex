@@ -1,0 +1,59 @@
+% \setlength{\unitlength}{1 cm}	%Especificar unidad de trabajo
+
+% 	SEGUNDA PAGÍNA DE LAS PORTADAS
+%--------------------------------------------------------------------------------------------------------
+\thispagestyle{empty}	% Borra los estilos que se puedan aplicar en el resto del documento
+% \newgeometry{left=2cm,bottom=2cm,right=2cm,top=2cm}	%Define nuevamente los margenes para unas paginas especificas
+
+% \fbox{
+\begin{minipage}{.125\linewidth}	% Es la mini página del logo IPN
+\includegraphics[scale=0.25]{./Figuras/Portada/IPN}
+\end{minipage}
+\hfill
+% \fbox{
+\begin{minipage}{.6\linewidth}	% Es la mini página del texto de la portada
+\begin{center}
+{\fontfamily{ptm}\selectfont 	%Para cambiar momentaneamente el tipo de letra a Times
+
+\textbf{\large INSTITUTO POLITÉCNICO NACIONAL}
+\textbf{\large ESCUELA SUPERIOR DE CÓMPUTO}\\
+\textbf{\large SUBDIRECCIÓN ACADÉMICA}\\
+
+}
+\end{center}
+\end{minipage}
+\hfill
+% \fbox{
+\begin{minipage}{.15\linewidth}	% Es la mini página del logo ESCOM
+\includegraphics[scale=0.4]{./Figuras/Portada/ESCOM}
+\end{minipage}\\
+{\fontfamily{ptm}\selectfont{
+\begin{flushleft}
+Registro de titulación: ISCCR52-2014A006/2016\hspace{3.75cm}Fecha: 1 de abril del 2016
+\end{flushleft}
+ %\vspace{0.2cm}
+\begin{center} 
+{Documento técnico}\\[0.5cm]
+\textbf{\large ``Herramienta de apoyo al entrenamiento de Karate Do"}\\[0.5cm]
+\textit{Presentan}\\[0.25cm]
+\textbf{Eduardo Adolfo Arroyo López}\footnote{earroyol1000@alumno.ipn.mx}\\[0.25cm]
+\textbf{Evila Lucero Salazar Ortiz}\footnote{esalazaro1000@alumno.ipn.mx}\\[0.25cm]
+\textbf{Valeria Canchola Sánchez}\footnote{valeriacan28@hotmail.com}\\[0.5cm]
+\textit{Directores}\\[0.5cm]
+\textit{\textbf{M. en C. José David Ortega Pacheco\hspace{1cm}M. en C. Roberto Eswart Zagal Flores}}\\[1cm]
+{\textbf{RESUMEN}}\\[0.5cm]
+\end{center}
+En el presente trabajo terminal se realiza una herramienta de entrenamiento para Karate Do que consta de dos módulos, el primero realiza la gestión de movimientos de técnica y rutinas el cual es utilizado por un experto en Karate Do; el segundo va dirigido al practicante de Karate Do en el cual puede consultar rutinas de entrenamiento proporcionadas por el primer módulo. Para determinar el desempeño con el cual el estudiante realiza los movimientos, la herramienta proporciona de manera automática  el resultado de su desempeño comparando sus movimientos con los movimientos capturados por el entrenador previamente, dicho resultado puede ser visto por ambos usuarios.
+La interacción en los modulos de captura y validación se realiza mediante una interfaz natural de usuario basada en gestos y movimientos, el hardware utilizado como medio de seguimiento e identificación del cuerpo es el sensor Kinect.\\
+\begin{flushleft}
+Palabras clave: Captura de movimientos, Entrenamiento físico, Karate Do, Validación de movimientos, Sensor Kinect.
+\end{flushleft}
+}}
+
+\clearpage
+\thispagestyle{empty}
+\hphantom{1cm}
+\pagebreak
+% \textbf{{\Huge Universidad de Córdoba}\\[0.5cm]
+
+% \restoregeometry

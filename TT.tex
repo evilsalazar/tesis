@@ -1,0 +1,78 @@
+%Tipo de documento: Book
+\documentclass[ letterpaper, 12pt]{book} %Quitarle oneside para imprimir y revisar imagenes
+
+\setcounter{secnumdepth}{5}				%Controlar el fondo de las subsecciones en el documento (5 es el limite)
+\setcounter{tocdepth}{4}				%Controlar el fondo de las subsecciones en el índice
+
+%Paquetes
+\usepackage[spanish, es-tabla]{babel}	%Lenguaje: Espanol
+\usepackage[utf8]{inputenc}				%Simbolos espanol
+\usepackage{anysize}					%Para los margenes
+\usepackage{graphicx}					%Para los graficos
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{float}						%Para colocar las cosas donde queramos
+\usepackage{wallpaper}
+\usepackage[absolute]{textpos}			%Para la portada
+\usepackage{subfig}
+\usepackage[hypcap]{caption}			%Resuelve el problema de hyperref / label
+\definecolor{ttcolor}{rgb}{0, 0, 0.545098}	%Colores para los hiperliks darkblue
+\usepackage[breaklinks,colorlinks=true,backref=true, linkcolor=ttcolor, citecolor=blue, urlcolor=blue]{hyperref}								%Para los links
+%Encabezado y pie de pagina
+\usepackage{fancyhdr}					%Para colocar un encabezado personalizado
+\usepackage{paralist}					%Itemize dentro de tabular
+\usepackage{enumitem}
+\usepackage{textgreek}					%Permite el uso de letras griegas
+\usepackage[letterpaper]{geometry}		%Para cambiar los margenes de las portadas al inicio
+
+%Margenes del documento
+\marginsize{3cm}{2cm}{2cm}{2cm}			%Margenes
+
+% Estilo del documento
+\pagestyle{fancy}	
+\fancyhf{}			
+\fancyhead[LE,RO]{\leftmark}			%Encabezado con el nombre del capitulo
+\fancyfoot[CE,CO]{\thepage}				%Numero de pagina
+
+% Cambiar el tamaño de la linea del header
+%\renewcommand\headrule{
+%\hrule width \hsize
+%}
+
+\restylefloat{table}					%Colocar la la tabla donde queramos
+
+
+
+\let\olditemize\itemize					%Reducir el espacio itemize
+\def\itemize{\olditemize\itemsep=0pt}
+
+%Documento
+\begin{document}
+
+\include{./Portada/Portada1}
+\include{./Portada/Portada2}
+%\include{./Portada/CartaResponsiva}
+\include{./Portada/Advertencia}
+\include{./Portada/Agradecimientos}
+\include{./Portada/PortadaFigura}
+\frontmatter
+\LLCornerWallPaper{1}{Figuras/Portada/Banner-Karate-red2} 
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\include{./Contenido/Introduccion}
+\include{./Contenido/MarcoTeorico}
+\include{./Contenido/Negocio}
+\include{./Contenido/Requerimientos}
+\include{./Contenido/Arquitectura}
+\include{./Contenido/Implementacion}
+\include{./Contenido/Conclusion}
+
+\appendix
+\bibliographystyle{IEEEtran}
+\bibliography{Referencias}
+\include{./Contenido/Anexos}
+
+\end{document}

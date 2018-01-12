@@ -1,0 +1,74 @@
+\section{Algoritmos}
+%--------------------------------------------------------------------------------------------------------
+\textbf{\large{Algoritmos de procesamiento de imágenes}}\cite{tracking}\\
+
+\textbf{Cascade Classification}\\
+
+En OpenCV, existen dos algoritmos para reconocer objetos en una imagen utilizando la clasificación en cascada. Viola01 y Lienhart02. El algoritmo Viola01 puede estar dividido en tres etapas:\\
+
+Integral image\\
+Los pixeles de la imagen son procesados en una sumatoria de la probabilidad que una función de tipo Haar ocurre en un sub rectángulo en particular de la imagen.\\
+
+Learning algorithm\\
+La imagen está atravesada, construyendo un árbol de decisiones usando el algoritmo AdaBoost. Cada sub-árbol es una clasificación, la cual iguala los patrones de la función de tipo Haar en cada sub-rectángulo.\\
+
+Cascade\\
+La etapa final del algoritmo Viola01. Esta es una etapa cruzada del árbol de decisiones creado en la fase de aprendizaje. Cada sub-árbol es igualado con los criterios de la función Haar y determinado si cumple con todas las propiedades.\\
+
+\textbf{SURF (Speed up Robust Feature)}\\
+
+Una descripción general de los pasos tomados por SURF es, primero extraer los puntos característicos de la imagen original. Los puntos extraídos son descritos, y pueden ser igualados con los puntos extraídos de otra imagen; donde la búsqueda por una igualdad potencial entre los puntos vaya a ser hecha, y se determina cuales puntos corresponden a cuál. Las dos características más importantes del algoritmo SURF son:\\
+
+Interest points extraction\\
+El detector es la entidad para extraer algunos puntos de interés, los puntos clave. Este detector extrae información de una matriz hessiana, usando derivadas Gaussianas de segundo grado. La propiedad más importante para una característica de extracción precisa y robusta es la repetibilidad. Los puntos de interés deben soportar ruido en la imagen, cambios en la iluminación, así como la copia con cambios de perspectiva entre las imágenes a ser comparadas.\\
+
+Description\\
+La imagen será dividida en regiones más pequeñas de forma cuadrática. El establecimiento de puntos de interés dentro de cada región de búsqueda será entonces descrito. El descriptor debe soportar las propiedades mencionadas cuando las características de extracción, así como el tener una cantidad muy pequeña de detecciones positivas falsas, cuando se igualen los puntos clave.\\
+
+\textbf{\large{Algoritmos de tracking}}\cite{tracking}\\
+
+\textbf{Algoritmo Bradski00}\\
+
+Este algoritmo depende de las siluetas del objeto en movimiento que, por ejemplo, puede ser extraido usando Propagación hacia atrás (back propagation) o aprender de forma dinámica, que es el fondo/primer plano en el video. \\
+Bradski00 comienza analizando si existe movimiento en la fuente de video, buscando la diferencia entre el frame anterior y el actual. Si hay movimiento, la intensidad de brillo de la silueta actual es maximizada, y todas las siluetas previas serán ligeramente desvanecidas.\\
+
+\textbf{Moments}\\
+
+Después de que varios filtros y técnicas de detección son aplicados, la habilidad de rastreo (tracking) con sólo mirar una figura de un objeto es útil. Usar moments es un camino posible para cumplir esto. En física, un momento es usualmente la fuerza que un objeto tiene cuando es rotado alrededor de un eje. Sin embargo, en este caso los momentos es un camino para calcular la atracción gravitacional de un objeto arbitrario. Si el objeto en cuestión tuviera una forma circular, la atracción gravitacional central sería justo en medio del círculo. La atracción gravitacional en el eje X sería el borde más lejano a la izquierda y la atracción gravitacional en el eje Y sería el borde más lejano superior.\\
+
+\textbf{Mean-Shift}\\
+
+Es un algoritmo que utiliza distribución de peso en una imagen. El algoritmo lo realiza analizando grupos de pixeles ya pesados y encuentra el área más probable en la imagen donde el objeto existe actualmente. Este algoritmo requiere una imagen pesada, y es muy eficiente el rastreo de objetos que destacan en comparación con la escena.\\
+
+\textbf{Cam-Shift}\\
+
+El algoritmo cam-shift utiliza los algoritmos de back-projection y mean-shift para rastrear objetos a través del color. El algoritmo cam-shift redimiensiona la ventana de búsqueda de acuerdo al total de peso del área local. Esto permite un rastreo completo en 3D de un objeto de una manera eficiente.\\
+
+\textbf{Optical Flow}\\
+
+Es una posibilidad que algunas propiedades de un objeto se distorsionen de alguna manera cuando un objeto es seguido: las condiciones de luz pueden cambiar, el objeto rastreado puede ser bloqueado por otro objeto, o el objeto puede salir de la imagen temporalmente por un periodo de tiempo. La necesidad de una buena manera para aproximar movimientos, y posiciones relativas para el tracking de objetos surge, una solución es utilizar flujo óptico. Ésta técnica calcula la velocidad, y la dirección de un objeto en movimiento. Utilizando la información adquirida de los algoritmos de flujo óptico es posible hacer suposiciones precisas de la posición de objetos, incluso si el objeto no está presente en el frame actual.\\
+
+\textbf{Block Matching}\\
+
+Este algoritmo además de otras cosas, es también utilizado por los formatos de compresión de video como MPEG y H.236. Este algoritmo es un método muy sencillo de seguir para el tracking de objetos en una imagen en movimiento. Comienza dividiendo cada frame en bloques disjuntos con un tamaño igual. \\
+
+\textbf{Lucas-Kanade}\\
+
+Es un algoritmo veloz de flujo óptico; tiene la habilidad de seguir (track) un largo grupo de puntos en una imagen, sin perder la habilidad de rastrear cada punto independientemente de cada otra con precisión. Transformaciones de imagen como: escalamiento o rotación tienen pequeños efectos sobre todo en el rendimiento del algoritmo. Sin embargo, Lucas-Kanade fallará al rastrear un punto específico en la imagen si el objeto que está siendo seguido se mueve demasiado rápido, o las condiciones de luz en la imagen cambian drásticamente. \\
+El algoritmo LK es en gran medida dependiente de:\\
+
+Brillo\\
+Las condiciones de luz, del frame previo al frame actual, deben preferentemente no cambiar del todo. \\
+
+Movimiento sostenido\\
+Para cada punto que está siendo rastreado (tracked), su velocidad sobre todo debe ser lenta. Notar que este supuesto no so es aplicado a cada punto individual, sino también a los puntos vecinos contenidos en la ventana.\\
+
+Coherencia de velocidad\\
+La velocidad global, y la dirección del movimiento es coherente para el punto que está siendo rastreado y sus vecinos correspondientes.\\
+
+\textbf{\large{Algoritmos de validación}}\cite{validacion}\\
+
+\textbf{Dynamic Time Warping}\\
+
+Es un algoritmo bien conocido para medir la similitud y encontrar una alineación entre dos secuencias de señales. 
+
